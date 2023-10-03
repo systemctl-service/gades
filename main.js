@@ -3102,8 +3102,8 @@ const environment = {
   production: false,
   //API_URL: 'http://rrhh.systemctl-service.com/api',
   //STORAGE_URL: 'http://rrhh.systemctl-service.com/storage/default/',
-  API_URL: 'https://foca-back.systemctl.es/api',
-  STORAGE_URL: 'https://foca-back.systemctl.es/storage/default/',
+  API_URL: 'https://foca-back.systemctl-service.es/api',
+  STORAGE_URL: 'https://foca-back.systemctl-service.es/storage/default/',
   AVATAR_URL: '../../../../../assets/img/img_avatar.png'
 };
 /*
