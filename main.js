@@ -1772,7 +1772,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! primeng/api */ 8026);
 /* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! primeng/button */ 2947);
 /* harmony import */ var primeng_autocomplete__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! primeng/autocomplete */ 4823);
+/* harmony import */ var primeng_autofocus__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! primeng/autofocus */ 4194);
 var _class;
+
 
 
 
@@ -1794,7 +1796,7 @@ function MostrarTareaPreRecComponent_ng_template_5_Template(rf, ctx) {
   if (rf & 2) {
     const ubicacion_r4 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ubicacion_r4.ubicacion);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ubicacion_r4.ubicacionId);
   }
 }
 function MostrarTareaPreRecComponent_div_6_ng_template_4_Template(rf, ctx) {
@@ -1868,6 +1870,10 @@ function MostrarTareaPreRecComponent_div_6_Template(rf, ctx) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r13);
       const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r16.validarCodigo($event));
+    })("paste", function MostrarTareaPreRecComponent_div_6_Template_p_autoComplete_paste_3_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r13);
+      const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r17.paste($event));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, MostrarTareaPreRecComponent_div_6_ng_template_4_Template, 2, 1, "ng-template", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
@@ -1881,7 +1887,7 @@ function MostrarTareaPreRecComponent_div_6_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("suggestions", ctx_r1.filteredMercancias)("forceSelection", true)("completeOnFocus", true)("showClear", true)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction1"](10, _c0, ctx_r1.codeInputLength > 13 || !ctx_r1.soloNumeros));
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("autofocus", ctx_r1.mercancias.length > 0)("suggestions", ctx_r1.filteredMercancias)("forceSelection", true)("completeOnFocus", true)("showClear", true)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction1"](11, _c0, ctx_r1.codeInputLength > 13 || !ctx_r1.soloNumeros));
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx_r1.codeInputLength > 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
@@ -1901,9 +1907,9 @@ function MostrarTareaPreRecComponent_div_7_ng_template_4_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
-    const ubicacion_r19 = ctx.$implicit;
+    const ubicacion_r20 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ubicacion_r19.ubicacion);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ubicacion_r20.ubicacionId);
   }
 }
 function MostrarTareaPreRecComponent_div_7_small_5_Template(rf, ctx) {
@@ -1915,23 +1921,31 @@ function MostrarTareaPreRecComponent_div_7_small_5_Template(rf, ctx) {
 }
 function MostrarTareaPreRecComponent_div_7_Template(rf, ctx) {
   if (rf & 1) {
-    const _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 1)(1, "label");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Nueva Ubicacion");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "p-autoComplete", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("completeMethod", function MostrarTareaPreRecComponent_div_7_Template_p_autoComplete_completeMethod_3_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r21);
-      const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r20.filter($event, "ubicacion", "ubicaciones"));
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r22);
+      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r21.filter($event, "ubicacionId", "ubicaciones"));
     })("onSelect", function MostrarTareaPreRecComponent_div_7_Template_p_autoComplete_onSelect_3_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r21);
-      const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r22.selectUbicacionNueva($event));
-    })("onClear", function MostrarTareaPreRecComponent_div_7_Template_p_autoComplete_onClear_3_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r22);
       const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r23.clearUbicacionNueva());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r23.selectUbicacion($event, "Nueva"));
+    })("onClear", function MostrarTareaPreRecComponent_div_7_Template_p_autoComplete_onClear_3_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r22);
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r24.clearUbicacion("Nueva"));
+    })("input", function MostrarTareaPreRecComponent_div_7_Template_p_autoComplete_input_3_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r22);
+      const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r25.inputUbicacion($event, "Nueva"));
+    })("paste", function MostrarTareaPreRecComponent_div_7_Template_p_autoComplete_paste_3_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r22);
+      const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r26.paste($event));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, MostrarTareaPreRecComponent_div_7_ng_template_4_Template, 2, 1, "ng-template", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
@@ -1941,33 +1955,33 @@ function MostrarTareaPreRecComponent_div_7_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("suggestions", ctx_r2.filteredUbicaciones)("forceSelection", true)("completeOnFocus", true)("showClear", true);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("autofocus", true)("suggestions", ctx_r2.filteredUbicaciones)("forceSelection", true)("completeOnFocus", true)("showClear", true);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", !ctx_r2.validarUbicaciones());
   }
 }
 function MostrarTareaPreRecComponent_div_8_Template(rf, ctx) {
   if (rf & 1) {
-    const _r25 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
+    const _r28 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 1)(1, "label");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Stock");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Cantidad");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "input", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngModelChange", function MostrarTareaPreRecComponent_div_8_Template_input_ngModelChange_3_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r25);
-      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r24.cantidad = $event);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r28);
+      const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r27.cantidad = $event);
     })("input", function MostrarTareaPreRecComponent_div_8_Template_input_input_3_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r25);
-      const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r26.validarCantidad($event));
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r28);
+      const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r29.validarCantidad($event));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngModel", ctx_r3.cantidad);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("autofocus", true)("ngModel", ctx_r3.cantidad);
   }
 }
 class MostrarTareaPreRecComponent {
@@ -2012,6 +2026,10 @@ class MostrarTareaPreRecComponent {
       next: res => {
         console.log(res);
         this.mercancias = res;
+        setTimeout(() => {
+          const mercaAC = document.getElementById('MercanciasAutocomplete');
+          mercaAC?.focus();
+        }, 50);
       },
       error: error => {
         console.error(error);
@@ -2027,6 +2045,7 @@ class MostrarTareaPreRecComponent {
     return this.validarUbicaciones() && this.codigoValido && this.cantidadValida;
   }
   validarUbicaciones() {
+    // console.log('se valida ', this.ubicacionAntiguaSeleccionada, ' y ', this.ubicacionNuevaSeleccionada);
     if (this.ubicacionAntiguaSeleccionada === null || this.ubicacionNuevaSeleccionada === null) {
       return false;
     }
@@ -2037,23 +2056,20 @@ class MostrarTareaPreRecComponent {
   }
   validarCodigo(event) {
     console.log('hey');
-    this.barcode = event.target.value;
-    let encontrado = false;
-    this.codeInputLength = this.barcode.length;
-    const regex = /^[0-9]*$/;
-    this.soloNumeros = regex.test(this.barcode);
-    console.log('solo numeros = ', this.soloNumeros, ' y 13 caracteres = ', this.codeInputLength);
-    this.mercancias.forEach(mercancia => {
-      if (mercancia.codigoEan == this.barcode) {
+    setTimeout(() => {
+      console.log('hey2');
+      this.barcode = event.target.value;
+      this.codeInputLength = this.barcode.length;
+      const regex = /^[0-9]*$/;
+      this.soloNumeros = regex.test(this.barcode);
+      this.mercanciaSeleccionada = this.mercancias.find(mercancia => mercancia.codigoEan == this.barcode);
+      if (this.mercanciaSeleccionada !== undefined) {
         this.codigoValido = true;
-        this.mercanciaSeleccionada = mercancia;
-        encontrado = true;
+      } else {
+        this.codigoValido = false;
+        this.mercanciaSeleccionada = null;
       }
-    });
-    if (!encontrado) {
-      this.codigoValido = false;
-      this.mercanciaSeleccionada = null;
-    }
+    }, 500);
   }
   validarCantidad(event) {
     let cantidad = event.target.value;
@@ -2116,20 +2132,27 @@ class MostrarTareaPreRecComponent {
   clearMercancia() {
     this.codigoEan = null;
   }
-  selectUbicacionAntigua(event) {
-    this.ubicacionAntigua = event.ubicacion;
-    this.ubicacionAntiguaSeleccionada = this.ubicaciones.find(ubicacion => ubicacion.ubicacion === this.ubicacionAntigua);
-    this.cargarMercancias(this.ubicacionAntiguaSeleccionada.id);
+  selectUbicacion(event, variacion) {
+    this['ubicacion' + variacion] = event.ubicacionId;
+    this['ubicacion' + variacion + 'Seleccionada'] = this.ubicaciones.find(ubicacion => ubicacion.ubicacionId === this['ubicacion' + variacion]);
+    if (variacion === 'Antigua') this.cargarMercancias(this.ubicacionAntiguaSeleccionada.id);
   }
-  clearUbicacionAntigua() {
-    this.ubicacionAntigua = null;
+  inputUbicacion(event, variacion) {
+    console.log('typing ', event.target.value);
+    this['ubicacion' + variacion] = event.target.value;
+    this['ubicacion' + variacion + 'Seleccionada'] = this.ubicaciones.find(ubicacion => ubicacion.ubicacionId === this['ubicacion' + variacion]);
+    if (variacion === 'Antigua' && this.ubicacionAntiguaSeleccionada) {
+      this.cargarMercancias(this.ubicacionAntiguaSeleccionada.id);
+    }
+    if (this.ubicacionAntiguaSeleccionada === undefined || this.ubicacionAntigua === null) this.mercancias = [];
   }
-  selectUbicacionNueva(event) {
-    this.ubicacionNueva = event.ubicacion;
-    this.ubicacionNuevaSeleccionada = this.ubicaciones.find(ubicacion => ubicacion.ubicacion === this.ubicacionNueva);
+  clearUbicacion(variacion) {
+    this['ubicacion' + variacion] = null;
+    if (this.ubicacionAntigua === null) this.mercancias = [];
   }
-  clearUbicacionNueva() {
-    this.ubicacionNueva = null;
+  paste(event) {
+    // limpia el valor del input y cuando esto ocurra el evento input con la funcion corresponiente le pondra el valor pegado
+    event.target.value = '';
   }
   ngOnDestroy() {
     this.subs.forEach(sub => sub.unsubscribe());
@@ -2146,8 +2169,8 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
     tarea: "tarea"
   },
   decls: 10,
-  vars: 8,
-  consts: [[1, "p-fluid"], [1, "field", "pl-0", "pt-1", "pb-0"], ["field", "ubicacion", "placeholder", "Inserte la Ubicacion Antigua", 3, "suggestions", "forceSelection", "completeOnFocus", "showClear", "completeMethod", "onSelect", "onClear"], ["pTemplate", "item"], ["class", "field pl-0 pt-1 pb-0", 4, "ngIf"], ["label", "Guardar", "icon", "pi pi-check", "styleClass", "p-button-primary", 1, "mt-2", 3, "disabled", "click"], ["field", "codigoEan", "placeholder", "Codigo de barras", 3, "suggestions", "forceSelection", "completeOnFocus", "showClear", "ngClass", "completeMethod", "onSelect", "onClear", "input"], ["class", "p-error", 4, "ngIf"], [4, "ngIf"], [1, "p-error"], ["field", "ubicacion", "placeholder", "Inserte la Ubicacion Nueva", 3, "suggestions", "forceSelection", "completeOnFocus", "showClear", "completeMethod", "onSelect", "onClear"], ["type", "number", "pInputText", "", "placeholder", "Ingrese la cantidad", 1, "mb-2", 3, "ngModel", "ngModelChange", "input"]],
+  vars: 9,
+  consts: [[1, "p-fluid"], [1, "field", "pl-0", "pt-1", "pb-0"], ["field", "ubicacionId", "placeholder", "Inserte la Ubicacion Antigua", 3, "autofocus", "suggestions", "forceSelection", "completeOnFocus", "showClear", "completeMethod", "onSelect", "onClear", "input", "paste"], ["pTemplate", "item"], ["class", "field pl-0 pt-1 pb-0", 4, "ngIf"], ["label", "Guardar", "icon", "pi pi-check", "styleClass", "p-button-primary", 1, "mt-2", 3, "disabled", "click"], ["field", "codigoEan", "placeholder", "Codigo de barras", 3, "autofocus", "suggestions", "forceSelection", "completeOnFocus", "showClear", "ngClass", "completeMethod", "onSelect", "onClear", "input", "paste"], ["class", "p-error", 4, "ngIf"], [4, "ngIf"], [1, "p-error"], ["field", "ubicacionId", "placeholder", "Inserte la Ubicacion Nueva", 3, "autofocus", "suggestions", "forceSelection", "completeOnFocus", "showClear", "completeMethod", "onSelect", "onClear", "input", "paste"], ["type", "number", "pInputText", "", "pAutoFocus", "", "placeholder", "Ingrese la cantidad", 1, "mb-2", 3, "autofocus", "ngModel", "ngModelChange", "input"]],
   template: function MostrarTareaPreRecComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "label");
@@ -2155,17 +2178,21 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "p-autoComplete", 2);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("completeMethod", function MostrarTareaPreRecComponent_Template_p_autoComplete_completeMethod_4_listener($event) {
-        return ctx.filter($event, "ubicacion", "ubicaciones");
+        return ctx.filter($event, "ubicacionId", "ubicaciones");
       })("onSelect", function MostrarTareaPreRecComponent_Template_p_autoComplete_onSelect_4_listener($event) {
-        return ctx.selectUbicacionAntigua($event);
+        return ctx.selectUbicacion($event, "Antigua");
       })("onClear", function MostrarTareaPreRecComponent_Template_p_autoComplete_onClear_4_listener() {
-        return ctx.clearUbicacionAntigua();
+        return ctx.clearUbicacion("Antigua");
+      })("input", function MostrarTareaPreRecComponent_Template_p_autoComplete_input_4_listener($event) {
+        return ctx.inputUbicacion($event, "Antigua");
+      })("paste", function MostrarTareaPreRecComponent_Template_p_autoComplete_paste_4_listener($event) {
+        return ctx.paste($event);
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](5, MostrarTareaPreRecComponent_ng_template_5_Template, 2, 1, "ng-template", 3);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, MostrarTareaPreRecComponent_div_6_Template, 10, 12, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](7, MostrarTareaPreRecComponent_div_7_Template, 6, 5, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](8, MostrarTareaPreRecComponent_div_8_Template, 4, 1, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, MostrarTareaPreRecComponent_div_6_Template, 10, 13, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](7, MostrarTareaPreRecComponent_div_7_Template, 6, 6, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](8, MostrarTareaPreRecComponent_div_8_Template, 4, 2, "div", 4);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "p-button", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function MostrarTareaPreRecComponent_Template_p_button_click_9_listener() {
         return ctx.submit();
@@ -2174,18 +2201,18 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("suggestions", ctx.filteredUbicaciones)("forceSelection", true)("completeOnFocus", true)("showClear", true);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("autofocus", true)("suggestions", ctx.filteredUbicaciones)("forceSelection", true)("completeOnFocus", true)("showClear", true);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.mercancias.length > 0);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.codigoValido);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.codigoValido);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.validarUbicaciones());
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("disabled", !ctx.validarTodo());
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgModel, primeng_inputtext__WEBPACK_IMPORTED_MODULE_7__.InputText, primeng_api__WEBPACK_IMPORTED_MODULE_8__.PrimeTemplate, primeng_button__WEBPACK_IMPORTED_MODULE_9__.Button, primeng_autocomplete__WEBPACK_IMPORTED_MODULE_10__.AutoComplete],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgModel, primeng_inputtext__WEBPACK_IMPORTED_MODULE_7__.InputText, primeng_api__WEBPACK_IMPORTED_MODULE_8__.PrimeTemplate, primeng_button__WEBPACK_IMPORTED_MODULE_9__.Button, primeng_autocomplete__WEBPACK_IMPORTED_MODULE_10__.AutoComplete, primeng_autofocus__WEBPACK_IMPORTED_MODULE_11__.AutoFocus],
   styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
 });
 
@@ -4251,8 +4278,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_splitbutton__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! primeng/splitbutton */ 4323);
 /* harmony import */ var primeng_menu__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! primeng/menu */ 5518);
 /* harmony import */ var primeng_breadcrumb__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! primeng/breadcrumb */ 1500);
+/* harmony import */ var primeng_autofocus__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! primeng/autofocus */ 4194);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 1699);
 var _class;
+
 
 
 
@@ -4291,11 +4320,11 @@ _class.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
 });
 _class.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
   providers: [primeng_api__WEBPACK_IMPORTED_MODULE_1__.MessageService, primeng_api__WEBPACK_IMPORTED_MODULE_1__.ConfirmationService, primeng_messages__WEBPACK_IMPORTED_MODULE_2__.MessagesModule],
-  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_fileupload__WEBPACK_IMPORTED_MODULE_5__.FileUploadModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.ReactiveFormsModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_toolbar__WEBPACK_IMPORTED_MODULE_10__.ToolbarModule, primeng_rating__WEBPACK_IMPORTED_MODULE_11__.RatingModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13__.InputTextareaModule, primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__.DropdownModule, primeng_radiobutton__WEBPACK_IMPORTED_MODULE_15__.RadioButtonModule, primeng_inputnumber__WEBPACK_IMPORTED_MODULE_16__.InputNumberModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, primeng_multiselect__WEBPACK_IMPORTED_MODULE_18__.MultiSelectModule, primeng_fieldset__WEBPACK_IMPORTED_MODULE_19__.FieldsetModule, primeng_autocomplete__WEBPACK_IMPORTED_MODULE_20__.AutoCompleteModule, primeng_messages__WEBPACK_IMPORTED_MODULE_2__.MessagesModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_skeleton__WEBPACK_IMPORTED_MODULE_22__.SkeletonModule, primeng_calendar__WEBPACK_IMPORTED_MODULE_23__.CalendarModule, primeng_splitbutton__WEBPACK_IMPORTED_MODULE_24__.SplitButtonModule, primeng_menu__WEBPACK_IMPORTED_MODULE_25__.MenuModule, primeng_breadcrumb__WEBPACK_IMPORTED_MODULE_26__.BreadcrumbModule]
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_fileupload__WEBPACK_IMPORTED_MODULE_5__.FileUploadModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.ReactiveFormsModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_toolbar__WEBPACK_IMPORTED_MODULE_10__.ToolbarModule, primeng_rating__WEBPACK_IMPORTED_MODULE_11__.RatingModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13__.InputTextareaModule, primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__.DropdownModule, primeng_radiobutton__WEBPACK_IMPORTED_MODULE_15__.RadioButtonModule, primeng_inputnumber__WEBPACK_IMPORTED_MODULE_16__.InputNumberModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, primeng_multiselect__WEBPACK_IMPORTED_MODULE_18__.MultiSelectModule, primeng_fieldset__WEBPACK_IMPORTED_MODULE_19__.FieldsetModule, primeng_autocomplete__WEBPACK_IMPORTED_MODULE_20__.AutoCompleteModule, primeng_messages__WEBPACK_IMPORTED_MODULE_2__.MessagesModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_skeleton__WEBPACK_IMPORTED_MODULE_22__.SkeletonModule, primeng_calendar__WEBPACK_IMPORTED_MODULE_23__.CalendarModule, primeng_splitbutton__WEBPACK_IMPORTED_MODULE_24__.SplitButtonModule, primeng_menu__WEBPACK_IMPORTED_MODULE_25__.MenuModule, primeng_breadcrumb__WEBPACK_IMPORTED_MODULE_26__.BreadcrumbModule, primeng_autofocus__WEBPACK_IMPORTED_MODULE_27__.AutoFocusModule]
 });
 (function () {
   (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](PrimeNgModule, {
-    exports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_fileupload__WEBPACK_IMPORTED_MODULE_5__.FileUploadModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.ReactiveFormsModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_toolbar__WEBPACK_IMPORTED_MODULE_10__.ToolbarModule, primeng_rating__WEBPACK_IMPORTED_MODULE_11__.RatingModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13__.InputTextareaModule, primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__.DropdownModule, primeng_radiobutton__WEBPACK_IMPORTED_MODULE_15__.RadioButtonModule, primeng_inputnumber__WEBPACK_IMPORTED_MODULE_16__.InputNumberModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, primeng_multiselect__WEBPACK_IMPORTED_MODULE_18__.MultiSelectModule, primeng_fieldset__WEBPACK_IMPORTED_MODULE_19__.FieldsetModule, primeng_autocomplete__WEBPACK_IMPORTED_MODULE_20__.AutoCompleteModule, primeng_messages__WEBPACK_IMPORTED_MODULE_2__.MessagesModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_skeleton__WEBPACK_IMPORTED_MODULE_22__.SkeletonModule, primeng_calendar__WEBPACK_IMPORTED_MODULE_23__.CalendarModule, primeng_splitbutton__WEBPACK_IMPORTED_MODULE_24__.SplitButtonModule, primeng_menu__WEBPACK_IMPORTED_MODULE_25__.MenuModule, primeng_breadcrumb__WEBPACK_IMPORTED_MODULE_26__.BreadcrumbModule]
+    exports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_fileupload__WEBPACK_IMPORTED_MODULE_5__.FileUploadModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.ReactiveFormsModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_toolbar__WEBPACK_IMPORTED_MODULE_10__.ToolbarModule, primeng_rating__WEBPACK_IMPORTED_MODULE_11__.RatingModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13__.InputTextareaModule, primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__.DropdownModule, primeng_radiobutton__WEBPACK_IMPORTED_MODULE_15__.RadioButtonModule, primeng_inputnumber__WEBPACK_IMPORTED_MODULE_16__.InputNumberModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, primeng_multiselect__WEBPACK_IMPORTED_MODULE_18__.MultiSelectModule, primeng_fieldset__WEBPACK_IMPORTED_MODULE_19__.FieldsetModule, primeng_autocomplete__WEBPACK_IMPORTED_MODULE_20__.AutoCompleteModule, primeng_messages__WEBPACK_IMPORTED_MODULE_2__.MessagesModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_toast__WEBPACK_IMPORTED_MODULE_9__.ToastModule, primeng_dialog__WEBPACK_IMPORTED_MODULE_17__.DialogModule, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormsModule, primeng_inputtext__WEBPACK_IMPORTED_MODULE_12__.InputTextModule, primeng_button__WEBPACK_IMPORTED_MODULE_7__.ButtonModule, primeng_table__WEBPACK_IMPORTED_MODULE_4__.TableModule, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_21__.ConfirmDialogModule, primeng_ripple__WEBPACK_IMPORTED_MODULE_8__.RippleModule, primeng_skeleton__WEBPACK_IMPORTED_MODULE_22__.SkeletonModule, primeng_calendar__WEBPACK_IMPORTED_MODULE_23__.CalendarModule, primeng_splitbutton__WEBPACK_IMPORTED_MODULE_24__.SplitButtonModule, primeng_menu__WEBPACK_IMPORTED_MODULE_25__.MenuModule, primeng_breadcrumb__WEBPACK_IMPORTED_MODULE_26__.BreadcrumbModule, primeng_autofocus__WEBPACK_IMPORTED_MODULE_27__.AutoFocusModule]
   });
 })();
 
