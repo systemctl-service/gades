@@ -4543,7 +4543,7 @@ class MostrarTareaMovimientoComponent {
           severity: 'success',
           detail: 'Registra de Movimiento realizado con exito'
         });
-        this.router.navigateByUrl('/ordenes-trabajo');
+        this.back();
       },
       error: error => {
         console.error(error);
@@ -5796,7 +5796,7 @@ var _class;
 
 
 const _c0 = function () {
-  return ["/"];
+  return ["/ordenes-trabajo"];
 };
 function MostrarOrdenTrabajoComponent_ng_template_3_Template(rf, ctx) {
   if (rf & 1) {
@@ -5831,7 +5831,7 @@ function MostrarOrdenTrabajoComponent_ng_container_5_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"]("Orden de tabajo: ", ctx_r2.ordenDeTrabajo.nombre, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r2.ordenDeTrabajo.nombre);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r2.ordenDeTrabajo.descripcion);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
