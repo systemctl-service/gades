@@ -3639,10 +3639,7 @@ function FacturaReaderComponent_div_13_ng_template_9_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4, "Descripcion");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "Precio");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8, "Importe");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "Importe");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
 }
@@ -3656,32 +3653,46 @@ function FacturaReaderComponent_div_13_ng_template_10_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "td");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const registroFactura_r15 = ctx.$implicit;
+    const registroFactura_r17 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r15.cantidad, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r17.cantidad, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r15.descripcion, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r17.descripcion, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r15.precio, " \u20AC ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r17.importe, " \u20AC ");
+  }
+}
+function FacturaReaderComponent_div_13_ng_template_18_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Texto");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+  }
+}
+function FacturaReaderComponent_div_13_ng_template_19_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "td", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const linea_r18 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r15.importe, " \u20AC ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", linea_r18.text, " ");
   }
 }
 function FacturaReaderComponent_div_13_Template(rf, ctx) {
   if (rf & 1) {
-    const _r17 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
+    const _r20 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 17)(1, "div", 18)(2, "button", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function FacturaReaderComponent_div_13_Template_button_click_2_listener() {
-      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r17);
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r20);
       const imagen_r12 = restoredCtx.$implicit;
-      const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r16.borrarImagen(imagen_r12.id));
+      const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r19.borrarImagen(imagen_r12.id));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "div", 20)(4, "h6")(5, "b");
@@ -3690,12 +3701,19 @@ function FacturaReaderComponent_div_13_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](8, "p-table", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](9, FacturaReaderComponent_div_13_ng_template_9_Template, 9, 0, "ng-template", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](10, FacturaReaderComponent_div_13_ng_template_10_Template, 9, 4, "ng-template", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](9, FacturaReaderComponent_div_13_ng_template_9_Template, 7, 0, "ng-template", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](10, FacturaReaderComponent_div_13_ng_template_10_Template, 7, 3, "ng-template", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](11, " \u00A0 \u00A0 \u00A0 ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](12, "img", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](13, "div", 20)(14, "h6")(15, "b");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](16, "TEXTO DETECTADO");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](17, "p-table", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](18, FacturaReaderComponent_div_13_ng_template_18_Template, 3, 0, "ng-template", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](19, FacturaReaderComponent_div_13_ng_template_19_Template, 3, 1, "ng-template", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
     const imagen_r12 = ctx.$implicit;
@@ -3706,6 +3724,8 @@ function FacturaReaderComponent_div_13_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("value", imagen_r12.tabla);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("src", imagen_r12.imagen || "https://source.unsplash.com/random", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("value", ctx_r3.textDeLaImagen.data.lines);
   }
 }
 class FacturaReaderComponent {
@@ -3720,6 +3740,7 @@ class FacturaReaderComponent {
     this.imagenes = [];
     this.tabla = [];
     this.nFactura = null;
+    this.textDeLaImagen = null;
   }
   ngOnInit() {
     // this.activatedRoute.params.subscribe({
@@ -3754,54 +3775,59 @@ class FacturaReaderComponent {
   subirImagen() {
     var _this = this;
     return (0,_home_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa', {
+      _this.textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa', {
         logger: loadingTextProgress => {
           // console.log('loadingTextProgress => ', loadingTextProgress);
         }
       });
-      let cabeceraIndex = _this.buscarCabeceraFactura(textDeLaImagen);
-      let subtotalIndex = _this.buscarSubtotalFactura(textDeLaImagen);
-      _this.nFactura = _this.buscarNFactura(textDeLaImagen);
+      let cabeceraIndex = _this.buscarCabeceraFactura(_this.textDeLaImagen);
+      let subtotalIndex = _this.buscarSubtotalFactura(_this.textDeLaImagen);
+      _this.nFactura = _this.buscarNFactura(_this.textDeLaImagen);
       let cantidadPrimero = false;
-      if (_this.similitud(textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'cant.') * 100 > 50) {
+      if (_this.similitud(_this.textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'cant.') * 100 > 50) {
         cantidadPrimero = true;
       }
-      if (_this.similitud(textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'cantidad') * 100 > 50) {
+      if (_this.similitud(_this.textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'cantidad') * 100 > 50) {
         cantidadPrimero = true;
       }
-      if (_this.similitud(textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'unidades') * 100 > 50) {
+      if (_this.similitud(_this.textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'unidades') * 100 > 50) {
         cantidadPrimero = true;
       }
       let j = 1;
-      console.log(cabeceraIndex);
-      console.log(subtotalIndex);
+      console.log(_this.textDeLaImagen.data.lines);
       for (let i = cabeceraIndex + 1; i < subtotalIndex; i++) {
-        let lineaLenght = textDeLaImagen.data.lines[i].words.length;
+        let lineaLenght = _this.textDeLaImagen.data.lines[i].words.length;
         // console.log(`ejecuto la linea ${i}`);
-        if (cantidadPrimero) {
-          let descripcion = '';
-          for (let k = 1; k < lineaLenght - 2; k++) {
-            descripcion = descripcion + textDeLaImagen.data.lines[i].words[k].text + ' ';
+        if (lineaLenght >= 3) {
+          if (cantidadPrimero) {
+            let descripcion = '';
+            for (let k = 1; k < lineaLenght - 2; k++) {
+              descripcion = descripcion + _this.textDeLaImagen.data.lines[i].words[k].text + ' ';
+            }
+            let registro = {
+              id: j,
+              cantidad: parseInt(_this.textDeLaImagen.data.lines[i].words[0].text),
+              importe: parseFloat(_this.textDeLaImagen.data.lines[i].words[lineaLenght - 1].text),
+              precio: null,
+              descripcion: descripcion
+            };
+            registro.precio = registro.importe / registro.cantidad;
+            _this.tabla.push(registro);
+          } else {
+            let descripcion = '';
+            for (let k = 0; k < lineaLenght - 3; k++) {
+              descripcion = descripcion + _this.textDeLaImagen.data.lines[i].words[k].text + ' ';
+            }
+            let registro = {
+              id: j,
+              importe: parseInt(_this.textDeLaImagen.data.lines[i].words[lineaLenght - 1].text),
+              precio: null,
+              cantidad: parseFloat(_this.textDeLaImagen.data.lines[i].words[lineaLenght - 3].text),
+              descripcion: descripcion
+            };
+            registro.precio = registro.importe / registro.cantidad;
+            _this.tabla.push(registro);
           }
-          _this.tabla.push({
-            id: j,
-            cantidad: parseInt(textDeLaImagen.data.lines[i].words[0].text),
-            importe: parseFloat(textDeLaImagen.data.lines[i].words[lineaLenght - 1].text),
-            precio: parseFloat(textDeLaImagen.data.lines[i].words[lineaLenght - 2].text),
-            descripcion: descripcion
-          });
-        } else {
-          let descripcion = '';
-          for (let k = 0; k < lineaLenght - 3; k++) {
-            descripcion = descripcion + textDeLaImagen.data.lines[i].words[k].text + ' ';
-          }
-          _this.tabla.push({
-            id: j,
-            importe: parseInt(textDeLaImagen.data.lines[i].words[lineaLenght - 1].text),
-            precio: parseFloat(textDeLaImagen.data.lines[i].words[lineaLenght - 2].text),
-            cantidad: parseFloat(textDeLaImagen.data.lines[i].words[lineaLenght - 3].text),
-            descripcion: descripcion
-          });
         }
         j++;
       }
@@ -3810,7 +3836,7 @@ class FacturaReaderComponent {
       const imagenToSave = {
         id: Math.floor(Math.random() * 100),
         imagen: '' + _this.imagenSubida,
-        texto: textDeLaImagen.data.text,
+        texto: _this.textDeLaImagen.data.text,
         tabla: JSON.parse(JSON.stringify(_this.tabla))
       };
       _this.tabla = [];
@@ -3891,31 +3917,59 @@ class FacturaReaderComponent {
     }
     return (longerLength - this.editDistance(longer, shorter)) / parseFloat(longerLength);
   }
-  buscarNFactura(textDeLaImagen) {
-    const nFacturaKeys = ['n"', 'num', 'numero', 'codigo'];
+  buscarLineaNfactura(textDeLaImagen) {
+    const nFacturaKeys = ['n"', 'n*', 'num', 'numero', 'codigo'];
+    // const postNFacturaKeys = ['de', 'factura'];
     let porcentajeRecord = 50;
     let indiceRecord = 0;
+    // let refuerzo = 0;
+    // let refuerzoRecord = 0;
     let palabraRecord = '';
     let i = 0;
     textDeLaImagen.data.lines.forEach(linea => {
       linea.words.forEach(palabraDeLaLinea => {
         nFacturaKeys.forEach(palabraDeLaFactura => {
+          let candidato = false;
           let porcentajeDeLaPalabra = this.similitud(palabraDeLaLinea.text, palabraDeLaFactura) * 100;
+          // console.log('itero mas');
           if (porcentajeDeLaPalabra > porcentajeRecord) {
             porcentajeRecord = porcentajeDeLaPalabra;
             palabraRecord = palabraDeLaLinea.text;
             indiceRecord = i;
+            console.log(`encontre un candito de ${palabraDeLaFactura} => ${palabraRecord}`);
+            // candidato = true;
           }
+          // if (candidato) {
+          //   refuerzo = 0;
+          //   postNFacturaKeys.forEach((postNFacturaKey) => {
+          //     if (this.similitud(postNFacturaKey, palabraDeLaLinea)) {
+          //       refuerzo++;
+          //     }
+          //     if (this.contieneNumeros(palabraDeLaLinea)) {
+          //       refuerzo++
+          //     }
+          //   });
+          // }
         });
       });
+
       i++;
     });
-    const lineaSelected = textDeLaImagen.data.lines[indiceRecord];
+    return {
+      lineaSelected: textDeLaImagen.data.lines[indiceRecord],
+      palabraRecord: palabraRecord
+    };
+  }
+  buscarNFactura(textDeLaImagen) {
+    const busquedaLinea = this.buscarLineaNfactura(textDeLaImagen);
+    const lineaSelected = busquedaLinea.lineaSelected;
     const palabras = lineaSelected.words;
     const lineaLenght = palabras.length;
+    const palabraRecord = busquedaLinea.palabraRecord;
     let palabraEncontrada = false;
     let numeroDeLaFactura = null;
     for (let i = 0; i < lineaLenght; i += 1) {
+      console.log(`estoy buscando ${palabraRecord} en ${palabras[i].text}`);
       if (!palabraEncontrada) {
         if (palabras[i].text == palabraRecord) {
           palabraEncontrada = true;
@@ -4004,7 +4058,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
   selectors: [["app-factura-reader"]],
   decls: 14,
   vars: 4,
-  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], ["class", "w-full", 4, "ngIf"], [1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 3, "value"], ["pTemplate", "body"], ["alt", "", 2, "height", "auto", "/* width", "18vw", "max-width", "18vw", "max-height", "18vw", "height", "18vw", "*/\n              width", "50%", "max-width", "50%", "border-radius", "10%", 3, "src"]],
+  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], ["class", "w-full", 4, "ngIf"], [1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 3, "value"], ["pTemplate", "body"], ["alt", "", 2, "height", "auto", "/* width", "18vw", "max-width", "18vw", "max-height", "18vw", "height", "18vw", "*/\n              width", "50%", "max-width", "50%", "border-radius", "10%", 3, "src"], [2, "padding", "0", "border-color", "black"]],
   template: function FacturaReaderComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "label", 2)(3, "b");
@@ -4020,7 +4074,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](11, FacturaReaderComponent_label_11_Template, 3, 0, "label", 7);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](12, "div", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](13, FacturaReaderComponent_div_13_Template, 13, 3, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](13, FacturaReaderComponent_div_13_Template, 20, 4, "div", 9);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
     }
     if (rf & 2) {
@@ -9749,4 +9803,4 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstr
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.1306f81549d819bc.js.map
+//# sourceMappingURL=main.2034c6c316e43b19.js.map
