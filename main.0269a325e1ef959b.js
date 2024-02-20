@@ -3639,7 +3639,10 @@ function FacturaReaderComponent_div_13_ng_template_9_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4, "Descripcion");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "Importe");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "Precio");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8, "Importe");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
 }
@@ -3653,6 +3656,9 @@ function FacturaReaderComponent_div_13_ng_template_10_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
@@ -3661,6 +3667,8 @@ function FacturaReaderComponent_div_13_ng_template_10_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r17.cantidad, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r17.descripcion, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r17.precio, " \u20AC ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r17.importe, " \u20AC ");
   }
@@ -3701,8 +3709,8 @@ function FacturaReaderComponent_div_13_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](8, "p-table", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](9, FacturaReaderComponent_div_13_ng_template_9_Template, 7, 0, "ng-template", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](10, FacturaReaderComponent_div_13_ng_template_10_Template, 7, 3, "ng-template", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](9, FacturaReaderComponent_div_13_ng_template_9_Template, 9, 0, "ng-template", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](10, FacturaReaderComponent_div_13_ng_template_10_Template, 9, 4, "ng-template", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](11, " \u00A0 \u00A0 \u00A0 ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](12, "img", 23);
@@ -3784,50 +3792,54 @@ class FacturaReaderComponent {
       let subtotalIndex = _this.buscarSubtotalFactura(_this.textDeLaImagen);
       _this.nFactura = _this.buscarNFactura(_this.textDeLaImagen);
       let cantidadPrimero = false;
-      if (_this.similitud(_this.textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'cant.') * 100 > 50) {
-        cantidadPrimero = true;
-      }
-      if (_this.similitud(_this.textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'cantidad') * 100 > 50) {
-        cantidadPrimero = true;
-      }
-      if (_this.similitud(_this.textDeLaImagen.data.lines[cabeceraIndex].words[0].text, 'unidades') * 100 > 50) {
-        cantidadPrimero = true;
-      }
       let j = 1;
       console.log(_this.textDeLaImagen.data.lines);
       for (let i = cabeceraIndex + 1; i < subtotalIndex; i++) {
-        let lineaLenght = _this.textDeLaImagen.data.lines[i].words.length;
+        let linea = _this.textDeLaImagen.data.lines[i];
+        let palabras = [].concat(linea.words);
+        let palabrasLenght = palabras.length;
         // console.log(`ejecuto la linea ${i}`);
-        if (lineaLenght >= 3) {
-          if (cantidadPrimero) {
-            let descripcion = '';
-            for (let k = 1; k < lineaLenght - 2; k++) {
-              descripcion = descripcion + _this.textDeLaImagen.data.lines[i].words[k].text + ' ';
-            }
-            let registro = {
-              id: j,
-              cantidad: parseInt(_this.textDeLaImagen.data.lines[i].words[0].text),
-              importe: parseFloat(_this.textDeLaImagen.data.lines[i].words[lineaLenght - 1].text),
-              precio: null,
-              descripcion: descripcion
-            };
-            registro.precio = registro.importe / registro.cantidad;
-            _this.tabla.push(registro);
-          } else {
-            let descripcion = '';
-            for (let k = 0; k < lineaLenght - 3; k++) {
-              descripcion = descripcion + _this.textDeLaImagen.data.lines[i].words[k].text + ' ';
-            }
-            let registro = {
-              id: j,
-              importe: parseInt(_this.textDeLaImagen.data.lines[i].words[lineaLenght - 1].text),
-              precio: null,
-              cantidad: parseFloat(_this.textDeLaImagen.data.lines[i].words[lineaLenght - 3].text),
-              descripcion: descripcion
-            };
-            registro.precio = registro.importe / registro.cantidad;
-            _this.tabla.push(registro);
+        if (palabrasLenght >= 3) {
+          let descripcion = '';
+          for (let k = 1; k < palabrasLenght - 2; k++) {
+            descripcion = descripcion + palabras[k].text + ' ';
           }
+          let cantidadDeLaLinea = null;
+          let laPalabraDeCantidad = null;
+          let buscandoCantidad = true;
+          palabras.forEach(palabra => {
+            if (buscandoCantidad && _this.contieneNumeros(palabra.text)) {
+              buscandoCantidad = false;
+              cantidadDeLaLinea = palabra.text;
+              laPalabraDeCantidad = palabra;
+            }
+          });
+          palabras = palabras.filter(palabra => palabra != laPalabraDeCantidad);
+          palabrasLenght = palabras.length;
+          let importeDeLaLinea = null;
+          let laPalabraDeImporte = null;
+          let buscandoImporte = true;
+          console.log(palabras);
+          for (let i = palabrasLenght - 1; i > 0; i -= 1) {
+            console.log('iteracion ', i);
+            const palabra = palabras[i];
+            console.log(palabra);
+            if (buscandoImporte && _this.contieneNumeros(palabra.text)) {
+              buscandoImporte = false;
+              importeDeLaLinea = palabra.text;
+              laPalabraDeImporte = palabra;
+            }
+          }
+          palabras = palabras.filter(palabra => palabra != laPalabraDeImporte);
+          let registro = {
+            id: j,
+            cantidad: cantidadDeLaLinea,
+            importe: importeDeLaLinea,
+            precio: null,
+            descripcion: descripcion
+          };
+          registro.precio = registro.importe / registro.cantidad;
+          _this.tabla.push(registro);
         }
         j++;
       }
@@ -9803,4 +9815,4 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstr
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.2034c6c316e43b19.js.map
+//# sourceMappingURL=main.0269a325e1ef959b.js.map
