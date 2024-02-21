@@ -149,7 +149,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](40, "i", 16);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](42, " Factura Reader ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](42, " Barcode Scanner ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
     }
     if (rf & 2) {
