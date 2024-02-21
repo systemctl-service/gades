@@ -3044,13 +3044,13 @@ var _class;
 
 function BarcodeScannerComponent_ng_container_6_Template(rf, ctx) {
   if (rf & 1) {
-    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "zxing-scanner", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "zxing-scanner", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("scanSuccess", function BarcodeScannerComponent_ng_container_6_Template_zxing_scanner_scanSuccess_1_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r2);
-      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r1.mostrarCodigo($event));
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3);
+      const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r2.mostrarCodigo($event));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
@@ -3061,22 +3061,39 @@ function BarcodeScannerComponent_ng_container_6_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("formats", ctx_r0.allowedFormats);
   }
 }
+function BarcodeScannerComponent_ng_container_7_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0, 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "h5");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " El Codigo de Barras:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "h5");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r1.codigoEan, " ");
+  }
+}
 class BarcodeScannerComponent {
   constructor() {
     this.messageService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(src_app_services_custom_message_service__WEBPACK_IMPORTED_MODULE_1__.CustomMessageService);
     this.router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router);
     this.scannerActivo = false;
     this.notFound = false;
-    this.codigoEan = '';
+    this.codigoEan = null;
     this.hadSubmit = false;
     this.allowedFormats = [_zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.EAN_13, _zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.EAN_8, _zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.CODE_128, _zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.UPC_A, _zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.UPC_E, _zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.UPC_EAN_EXTENSION, _zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.DATA_MATRIX, _zxing_library__WEBPACK_IMPORTED_MODULE_0__.BarcodeFormat.QR_CODE];
   }
   enableScanner() {
     this.scannerActivo = true;
   }
-  mostrarCodigo(event) {
+  mostrarCodigo(codigo) {
     this.scannerActivo = false;
-    console.log('EL CODGIO =>', event);
+    this.codigoEan = codigo;
   }
 }
 _class = BarcodeScannerComponent;
@@ -3086,9 +3103,9 @@ _class.ɵfac = function BarcodeScannerComponent_Factory(t) {
 _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
   type: _class,
   selectors: [["app-barcode-scanner"]],
-  decls: 7,
-  vars: 1,
-  consts: [[1, "card"], [1, "card-header"], [1, "card-title"], [1, "card-body", "table-responsive"], ["pRipple", "", "label", "Escannear", "icon", "pi pi-camera", 1, "p-button-primary", 3, "click"], [4, "ngIf"], ["data-dismiss", "modal", 3, "formats", "scanSuccess"]],
+  decls: 8,
+  vars: 2,
+  consts: [[1, "card"], [1, "card-header"], [1, "card-title"], [1, "card-body", "table-responsive"], ["pRipple", "", "label", "Escannear", "icon", "pi pi-camera", 1, "p-button-primary", 3, "click"], [4, "ngIf"], ["class", "text-center", 4, "ngIf"], ["data-dismiss", "modal", 3, "formats", "scanSuccess"], [1, "text-center"]],
   template: function BarcodeScannerComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "h3", 2);
@@ -3100,10 +3117,13 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefi
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, BarcodeScannerComponent_ng_container_6_Template, 2, 1, "ng-container", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](7, BarcodeScannerComponent_ng_container_7_Template, 5, 1, "ng-container", 6);
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.scannerActivo);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.codigoEan != null);
     }
   },
   dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, primeng_ripple__WEBPACK_IMPORTED_MODULE_5__.Ripple, primeng_button__WEBPACK_IMPORTED_MODULE_6__.Button, _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_7__.ZXingScannerComponent],
