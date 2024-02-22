@@ -4544,13 +4544,13 @@ function FacturaReaderComponent_ng_container_12_div_3_ng_template_14_Template(rf
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const registroFactura_r19 = ctx.$implicit;
+    const registroFactura_r20 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r19.cantidad, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r20.cantidad, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r19.descripcion, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r20.descripcion, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("", registroFactura_r19.importe, " \u20AC");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("", registroFactura_r20.importe, " \u20AC");
   }
 }
 function FacturaReaderComponent_ng_container_12_div_3_ng_template_23_Template(rf, ctx) {
@@ -4567,20 +4567,37 @@ function FacturaReaderComponent_ng_container_12_div_3_ng_template_24_Template(rf
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const linea_r20 = ctx.$implicit;
+    const linea_r21 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", linea_r20.text, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", linea_r21.text, " ");
+  }
+}
+function FacturaReaderComponent_ng_container_12_div_3_ng_container_28_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](1, "div", 23)(2, "h5")(3, "b");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4, "HUBO UN ERROR");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "h6");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ctx_r19.imagenes[0] == null ? null : ctx_r19.imagenes[0].errorFunc);
   }
 }
 function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
+    const _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 20)(1, "div", 21)(2, "button", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function FacturaReaderComponent_ng_container_12_div_3_Template_button_click_2_listener() {
-      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r22);
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r23);
       const imagen_r14 = restoredCtx.$implicit;
-      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r21.borrarImagen(imagen_r14.id));
+      const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r22.borrarImagen(imagen_r14.id));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "div", 23)(4, "h6")(5, "b");
@@ -4607,7 +4624,10 @@ function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](22, "p-table", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](23, FacturaReaderComponent_ng_container_12_div_3_ng_template_23_Template, 3, 0, "ng-template", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](24, FacturaReaderComponent_ng_container_12_div_3_ng_template_24_Template, 3, 1, "ng-template", 25);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](25, "br")(26, "br")(27, "br");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](28, FacturaReaderComponent_ng_container_12_div_3_ng_container_28_Template, 7, 1, "ng-container", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
     const imagen_r14 = ctx.$implicit;
@@ -4622,6 +4642,8 @@ function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("src", imagen_r14.imagen || "https://source.unsplash.com/random", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("value", ctx_r13.textDeLaImagen.data.lines);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx_r13.imagenes[0] == null ? null : ctx_r13.imagenes[0].errorFunc);
   }
 }
 function FacturaReaderComponent_ng_container_12_Template(rf, ctx) {
@@ -4629,7 +4651,7 @@ function FacturaReaderComponent_ng_container_12_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, FacturaReaderComponent_ng_container_12_label_1_Template, 3, 0, "label", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "div", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, FacturaReaderComponent_ng_container_12_div_3_Template, 25, 5, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, FacturaReaderComponent_ng_container_12_div_3_Template, 29, 6, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerEnd"]();
   }
@@ -4690,95 +4712,125 @@ class FacturaReaderComponent {
   subirImagen() {
     var _this = this;
     return (0,_home_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const worker = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.createWorker)();
+      let errorH = false;
+      let errorFuncion = null;
       _this.loading = true;
-      _this.textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa');
-      _this.loading = false;
-      // ver las lineas en la consola
-      console.log(_this.textDeLaImagen.data);
-      const algo = document.getElementById('algo');
-      // setTimeout(() => {
-      //   console.log('algo => ', this.textDeLaImagen.data['hocr']);
-      //   algo.innerHTML = this.textDeLaImagen.data['hocr'];
-      // }, 1000);
-      // buscando cif
-      _this.cif = _this.buscarCifFactura(_this.textDeLaImagen);
-      _this.cif = _this.cif ? _this.cif.data : 'not Found';
-      // buscando numero de factura
-      // this.nFactura = this.buscarNFactura(this.textDeLaImagen);
-      // this.nFactura = this.nFactura ? this.nFactura : 'not Found';
-      let j = 1;
-      const cabeceraIndex = _this.buscarCabeceraFactura(_this.textDeLaImagen);
-      if (cabeceraIndex != null) {
-        console.log('LA CABECERA => ', _this.textDeLaImagen.data.lines[cabeceraIndex].text);
-        const subtotalIndex = _this.buscarSubtotalFactura(_this.textDeLaImagen, cabeceraIndex);
-        console.log('EL "SUBTOTAL" => ', _this.textDeLaImagen.data.lines[subtotalIndex].text);
-        console.log('-------EMPEZAMOS A METER PRODUCTOS----------');
-        for (let i = cabeceraIndex + 1; i < subtotalIndex; i++) {
-          let linea = _this.textDeLaImagen.data.lines[i];
-          let palabras = [].concat(linea.words);
-          let palabrasLenght = palabras.length;
-          // console.log(`ejecuto la linea ${i}`);
-          if (palabrasLenght >= 3) {
-            let descripcion = '';
-            // for (let k = 1; k < palabrasLenght - 2; k++) {
-            //   descripcion = descripcion + palabras[k].text + ' ';
-            // }
-            let cantidadDeLaLinea = null;
-            let laPalabraDeCantidad = null;
-            let buscandoCantidad = true;
-            console.log('LA LINEA QUE ESTAMOS VIENDO => ', linea.text);
-            palabras.forEach(palabra => {
-              if (buscandoCantidad && _this.contieneNumeros(palabra.text)) {
-                buscandoCantidad = false;
-                cantidadDeLaLinea = palabra.text;
-                laPalabraDeCantidad = palabra;
-              }
-            });
-            palabras = palabras.filter(palabra => palabra != laPalabraDeCantidad);
-            palabrasLenght = palabras.length;
-            let importeDeLaLinea = null;
-            let laPalabraDeImporte = null;
-            let buscandoImporte = true;
-            for (let i = palabrasLenght - 1; i > 0; i -= 1) {
-              // console.log('iteracion ', i);
-              const palabra = palabras[i];
-              // console.log(palabra);
-              if (buscandoImporte && _this.contieneNumeros(palabra.text)) {
-                buscandoImporte = false;
-                importeDeLaLinea = palabra.text;
-                laPalabraDeImporte = palabra;
-              }
-            }
-            palabras = palabras.filter(palabra => palabra != laPalabraDeImporte);
-            palabras.forEach(palabra => {
-              descripcion += palabra.text + ' ';
-            });
-            console.log('LA DESCRIPCION DEL PRODUCTO => ', descripcion);
-            let registro = {
-              id: j,
-              cantidad: parseInt(cantidadDeLaLinea.replace(',', '.')),
-              importe: parseFloat(importeDeLaLinea.replace(',', '.')),
-              precio: null,
-              descripcion: descripcion
-            };
-            registro.precio = registro.importe / registro.cantidad;
-            _this.tabla.push(registro);
-          }
-          j++;
-          if (i < subtotalIndex - 1) console.log('-------SIGUIENTE PRODUCTO----------');
-          console.log('1,80 a parseFloat => ', parseFloat('1,80'));
+      _this.textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa', {
+        errorHandler: () => {
+          // errorH = true;
         }
-      } else {
-        console.log('NO HAY CABECERA');
+      });
+      _this.loading = false;
+      if (!errorH) {
+        // ver las lineas en la consola
+        console.log(_this.textDeLaImagen.data);
+        const algo = document.getElementById('algo');
+        // setTimeout(() => {
+        //   console.log('algo => ', this.textDeLaImagen.data['hocr']);
+        //   algo.innerHTML = this.textDeLaImagen.data['hocr'];
+        // }, 1000);
+        // buscando cif
+        try {
+          _this.cif = _this.buscarCifFactura(_this.textDeLaImagen);
+          _this.cif = _this.cif ? _this.cif.data : 'not Found';
+        } catch {
+          errorFuncion = 'error en buscarCifFactura()';
+        }
+        // buscando numero de factura
+        // this.nFactura = this.buscarNFactura(this.textDeLaImagen);
+        // this.nFactura = this.nFactura ? this.nFactura : 'not Found';
+        let j = 1;
+        let cabeceraIndex = null;
+        try {
+          cabeceraIndex = _this.buscarCabeceraFactura(_this.textDeLaImagen);
+        } catch {
+          errorFuncion = 'error en buscarCabeceraFactura()';
+        }
+        if (cabeceraIndex != null) {
+          console.log('LA CABECERA => ', _this.textDeLaImagen.data.lines[cabeceraIndex].text);
+          let subtotalIndex = null;
+          try {
+            subtotalIndex = _this.buscarSubtotalFactura(_this.textDeLaImagen, cabeceraIndex);
+          } catch {
+            errorFuncion = 'error en buscarSubtotalFactura()';
+          }
+          if (subtotalIndex != null) {
+            console.log('EL "SUBTOTAL" => ', _this.textDeLaImagen.data.lines[subtotalIndex].text);
+            console.log('-------EMPEZAMOS A METER PRODUCTOS----------');
+            for (let i = cabeceraIndex + 1; i < subtotalIndex; i++) {
+              let linea = _this.textDeLaImagen.data.lines[i];
+              let palabras = [].concat(linea.words);
+              let palabrasLenght = palabras.length;
+              // console.log(`ejecuto la linea ${i}`);
+              if (palabrasLenght >= 3) {
+                let descripcion = '';
+                // for (let k = 1; k < palabrasLenght - 2; k++) {
+                //   descripcion = descripcion + palabras[k].text + ' ';
+                // }
+                let cantidadDeLaLinea = null;
+                let laPalabraDeCantidad = null;
+                let buscandoCantidad = true;
+                console.log('LA LINEA QUE ESTAMOS VIENDO => ', linea.text);
+                palabras.forEach(palabra => {
+                  if (buscandoCantidad && _this.contieneNumeros(palabra.text)) {
+                    buscandoCantidad = false;
+                    cantidadDeLaLinea = palabra.text;
+                    laPalabraDeCantidad = palabra;
+                  }
+                });
+                if (laPalabraDeCantidad != null) {
+                  palabras = palabras.filter(palabra => palabra != laPalabraDeCantidad);
+                }
+                palabrasLenght = palabras.length;
+                let importeDeLaLinea = null;
+                let laPalabraDeImporte = null;
+                let buscandoImporte = true;
+                for (let i = palabrasLenght - 1; i > 0; i -= 1) {
+                  // console.log('iteracion ', i);
+                  const palabra = palabras[i];
+                  // console.log(palabra);
+                  if (buscandoImporte && _this.contieneNumeros(palabra.text)) {
+                    buscandoImporte = false;
+                    importeDeLaLinea = palabra.text;
+                    laPalabraDeImporte = palabra;
+                  }
+                }
+                if (laPalabraDeImporte != null) {
+                  palabras = palabras.filter(palabra => palabra != laPalabraDeImporte);
+                }
+                palabras.forEach(palabra => {
+                  descripcion += palabra.text + ' ';
+                });
+                console.log('LA DESCRIPCION DEL PRODUCTO => ', descripcion);
+                let registro = {
+                  id: j,
+                  cantidad: cantidadDeLaLinea ? parseInt(cantidadDeLaLinea.replace(',', '.')) : 'N/A',
+                  importe: importeDeLaLinea ? parseFloat(importeDeLaLinea.replace(',', '.')) : 'N/A',
+                  precio: null,
+                  descripcion: descripcion ? descripcion : 'N/A'
+                };
+                // registro.precio = registro.importe / registro.cantidad;
+                _this.tabla.push(registro);
+              }
+              j++;
+              if (i < subtotalIndex - 1) console.log('-------SIGUIENTE PRODUCTO----------');
+              console.log('1,80 a parseFloat => ', parseFloat('1,80'));
+            }
+          } else {
+            console.log('NO HAY SUBTOTAL');
+          }
+        } else {
+          console.log('NO HAY CABECERA');
+        }
+        console.log('-------TERMINAMOS DE METER PRODUCTOS----------');
+        console.log('la tabla => ', _this.tabla);
       }
-      console.log('-------TERMINAMOS DE METER PRODUCTOS----------');
-      console.log('la tabla => ', _this.tabla);
       const imagenToSave = {
         id: Math.floor(Math.random() * 100),
         imagen: '' + _this.imagenSubida,
-        texto: _this.textDeLaImagen.data.text,
-        tabla: JSON.parse(JSON.stringify(_this.tabla))
+        texto: errorH ? 'HUBO UN ERROR AL CARGAR LA IMAGEN' : _this.textDeLaImagen.data.text,
+        tabla: JSON.parse(JSON.stringify(_this.tabla)),
+        errorFunc: errorFuncion ? errorFuncion : null
       };
       _this.tabla = [];
       if (_this.imagenes.length > 0) _this.imagenes.pop();
@@ -5090,7 +5142,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
   selectors: [["app-factura-reader"]],
   decls: 13,
   vars: 4,
-  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], [4, "ngIf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "20vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], ["class", "w-full", 4, "ngIf"], ["id", "algo", 1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 1, "max-w-full", 3, "value"], ["pTemplate", "body"], ["alt", "", 2, "height", "auto", "/* width", "18vw", "max-width", "18vw", "max-height", "18vw", "height", "18vw", "*/\n              width", "50%", "max-width", "50%", "border-radius", "10%", 3, "src"], ["selectionMode", "single", 3, "value"], [2, "padding", "0", "border-color", "black"]],
+  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], [4, "ngIf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "20vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], ["class", "w-full", 4, "ngIf"], ["id", "algo", 1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 1, "max-w-full", 3, "value"], ["pTemplate", "body"], ["alt", "", 2, "height", "auto", "/* width", "18vw", "max-width", "18vw", "max-height", "18vw", "height", "18vw", "*/\n                width", "50%", "max-width", "50%", "border-radius", "10%", 3, "src"], ["selectionMode", "single", 3, "value"], [2, "padding", "0", "border-color", "black"]],
   template: function FacturaReaderComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "label", 2)(3, "b");
