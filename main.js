@@ -4692,11 +4692,7 @@ class FacturaReaderComponent {
     return (0,_home_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const worker = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.createWorker)();
       _this.loading = true;
-      _this.textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa', {
-        logger: loadingTextProgress => {
-          // console.log('loadingTextProgress => ', loadingTextProgress);
-        }
-      });
+      _this.textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa');
       _this.loading = false;
       // ver las lineas en la consola
       console.log(_this.textDeLaImagen.data);
