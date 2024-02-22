@@ -4521,16 +4521,13 @@ function FacturaReaderComponent_ng_container_12_label_1_Template(rf, ctx) {
 function FacturaReaderComponent_ng_container_12_div_3_ng_template_13_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Cantidad");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Cant");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "th");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4, "Descripcion");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "Precio");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8, "Importe");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "Imp");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
 }
@@ -4544,9 +4541,6 @@ function FacturaReaderComponent_ng_container_12_div_3_ng_template_14_Template(rf
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "td");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
@@ -4555,8 +4549,6 @@ function FacturaReaderComponent_ng_container_12_div_3_ng_template_14_Template(rf
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r19.cantidad, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r19.descripcion, " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("", registroFactura_r19.precio, " \u20AC");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("", registroFactura_r19.importe, " \u20AC");
   }
@@ -4570,7 +4562,7 @@ function FacturaReaderComponent_ng_container_12_div_3_ng_template_23_Template(rf
 }
 function FacturaReaderComponent_ng_container_12_div_3_ng_template_24_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "td", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "td", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
@@ -4602,8 +4594,8 @@ function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](11);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](12, "p-table", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](13, FacturaReaderComponent_ng_container_12_div_3_ng_template_13_Template, 9, 0, "ng-template", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](14, FacturaReaderComponent_ng_container_12_div_3_ng_template_14_Template, 9, 4, "ng-template", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](13, FacturaReaderComponent_ng_container_12_div_3_ng_template_13_Template, 7, 0, "ng-template", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](14, FacturaReaderComponent_ng_container_12_div_3_ng_template_14_Template, 7, 3, "ng-template", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](15, " \u00A0 \u00A0 \u00A0 ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](16, "img", 26);
@@ -4612,7 +4604,7 @@ function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](18, "div", 23)(19, "h6")(20, "b");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](21, "TEXTO DETECTADO");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](22, "p-table", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](22, "p-table", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](23, FacturaReaderComponent_ng_container_12_div_3_ng_template_23_Template, 3, 0, "ng-template", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](24, FacturaReaderComponent_ng_container_12_div_3_ng_template_24_Template, 3, 1, "ng-template", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
@@ -4698,6 +4690,7 @@ class FacturaReaderComponent {
   subirImagen() {
     var _this = this;
     return (0,_home_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const worker = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.createWorker)();
       _this.loading = true;
       _this.textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa', {
         logger: loadingTextProgress => {
@@ -4993,19 +4986,34 @@ class FacturaReaderComponent {
         // console.log('ESTOY BUSCANDO EL CIF EN => ', palabraDeLaLinea);
         if (indiceCif == null) {
           if (cifRegex.test(palabraDeLaLinea.text) || cifRegex2.test(palabraDeLaLinea.text)) {
+            let cifAGuardar = ''.concat(palabraDeLaLinea.text);
+            if (cifAGuardar[0] == '4') {
+              cifAGuardar = 'A'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+            }
+            if (cifAGuardar[0] == '8') {
+              cifAGuardar = 'B'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+            }
             indiceCif = {
               linea: i,
               palabra: j,
-              data: palabraDeLaLinea.text
+              data: cifAGuardar
             };
             console.log('El CIF es => ', indiceCif.data);
             console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
             return indiceCif;
           } else if (cifRegex3.test(palabraDeLaLinea.text) || cifRegex4.test(palabraDeLaLinea.text)) {
+            let cifAGuardar = ''.concat(palabraDeLaLinea.text);
+            cifAGuardar = cifAGuardar.replace('(', '').replace(')', '');
+            if (cifAGuardar[0] == '4') {
+              cifAGuardar = 'A'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+            }
+            if (cifAGuardar[0] == '8') {
+              cifAGuardar = 'B'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+            }
             indiceCif = {
               linea: i,
               palabra: j,
-              data: palabraDeLaLinea.text
+              data: cifAGuardar
             };
             console.log('El CIF es => ', indiceCif.data);
             console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
@@ -5019,19 +5027,34 @@ class FacturaReaderComponent {
           // console.log('ESTOY BUSCANDO EL CIF EN => ', palabraDeLaLinea);
           if (indiceCif == null) {
             if (cifRegex5.test(palabraDeLaLinea.text) || cifRegex6.test(palabraDeLaLinea.text)) {
+              let cifAGuardar = ''.concat(palabraDeLaLinea.text);
+              if (cifAGuardar[0] == '4') {
+                cifAGuardar = 'A'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+              }
+              if (cifAGuardar[0] == '8') {
+                cifAGuardar = 'B'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+              }
               indiceCif = {
                 linea: i,
                 palabra: j,
-                data: palabraDeLaLinea.text
+                data: cifAGuardar
               };
               console.log('El CIF es => ', indiceCif.data);
               console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
               return indiceCif;
             } else if (cifRegex7.test(palabraDeLaLinea.text) || cifRegex8.test(palabraDeLaLinea.text)) {
+              let cifAGuardar = ''.concat(palabraDeLaLinea.text);
+              cifAGuardar = cifAGuardar.replace('(', '').replace(')', '');
+              if (cifAGuardar[0] == '4') {
+                cifAGuardar = 'A'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+              }
+              if (cifAGuardar[0] == '8') {
+                cifAGuardar = 'B'.concat(cifAGuardar.substring(1, cifAGuardar.length));
+              }
               indiceCif = {
                 linea: i,
                 palabra: j,
-                data: palabraDeLaLinea.text
+                data: cifAGuardar
               };
               console.log('El CIF es => ', indiceCif.data);
               console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
@@ -5071,7 +5094,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
   selectors: [["app-factura-reader"]],
   decls: 13,
   vars: 4,
-  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], [4, "ngIf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "20vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], ["class", "w-full", 4, "ngIf"], ["id", "algo", 1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 3, "value"], ["pTemplate", "body"], ["alt", "", 2, "height", "auto", "/* width", "18vw", "max-width", "18vw", "max-height", "18vw", "height", "18vw", "*/\n              width", "50%", "max-width", "50%", "border-radius", "10%", 3, "src"], [2, "padding", "0", "border-color", "black"]],
+  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], [4, "ngIf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "20vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], ["class", "w-full", 4, "ngIf"], ["id", "algo", 1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 1, "max-w-full", 3, "value"], ["pTemplate", "body"], ["alt", "", 2, "height", "auto", "/* width", "18vw", "max-width", "18vw", "max-height", "18vw", "height", "18vw", "*/\n              width", "50%", "max-width", "50%", "border-radius", "10%", 3, "src"], ["selectionMode", "single", 3, "value"], [2, "padding", "0", "border-color", "black"]],
   template: function FacturaReaderComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "label", 2)(3, "b");
