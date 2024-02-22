@@ -4996,7 +4996,7 @@ class FacturaReaderComponent {
             indiceCif = {
               linea: i,
               palabra: j,
-              data: textDeLaImagen.data.lines[i].words[j].text
+              data: palabraDeLaLinea.text
             };
             console.log('El CIF es => ', indiceCif.data);
             console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
@@ -5005,7 +5005,7 @@ class FacturaReaderComponent {
             indiceCif = {
               linea: i,
               palabra: j,
-              data: textDeLaImagen.data.lines[i].words[j].text
+              data: palabraDeLaLinea.text
             };
             console.log('El CIF es => ', indiceCif.data);
             console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
@@ -5022,7 +5022,7 @@ class FacturaReaderComponent {
               indiceCif = {
                 linea: i,
                 palabra: j,
-                data: textDeLaImagen.data.lines[i].words[j].text
+                data: palabraDeLaLinea.text
               };
               console.log('El CIF es => ', indiceCif.data);
               console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
@@ -5031,7 +5031,7 @@ class FacturaReaderComponent {
               indiceCif = {
                 linea: i,
                 palabra: j,
-                data: textDeLaImagen.data.lines[i].words[j].text
+                data: palabraDeLaLinea.text
               };
               console.log('El CIF es => ', indiceCif.data);
               console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
