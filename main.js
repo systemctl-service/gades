@@ -4706,7 +4706,7 @@ class FacturaReaderComponent {
       });
       _this.loading = false;
       // ver las lineas en la consola
-      // console.log(this.textDeLaImagen.data);
+      console.log(_this.textDeLaImagen.data);
       const algo = document.getElementById('algo');
       // setTimeout(() => {
       //   console.log('algo => ', this.textDeLaImagen.data['hocr']);
@@ -4720,8 +4720,8 @@ class FacturaReaderComponent {
       // this.nFactura = this.nFactura ? this.nFactura : 'not Found';
       let j = 1;
       const cabeceraIndex = _this.buscarCabeceraFactura(_this.textDeLaImagen);
-      console.log('LA CABECERA => ', _this.textDeLaImagen.data.lines[cabeceraIndex].text);
       if (cabeceraIndex != null) {
+        console.log('LA CABECERA => ', _this.textDeLaImagen.data.lines[cabeceraIndex].text);
         const subtotalIndex = _this.buscarSubtotalFactura(_this.textDeLaImagen, cabeceraIndex);
         console.log('EL "SUBTOTAL" => ', _this.textDeLaImagen.data.lines[subtotalIndex].text);
         console.log('-------EMPEZAMOS A METER PRODUCTOS----------');
@@ -4974,39 +4974,73 @@ class FacturaReaderComponent {
     const cifRegex2 = /^[a-zA-Z]-[0-9]{8}$/;
     const cifRegex3 = /^\([a-zA-Z][0-9]{8}\)$/;
     const cifRegex4 = /^\([a-zA-Z]-[0-9]{8}\)$/;
+    const cifRegex5 = /^[48][0-9]{8}$/;
+    const cifRegex6 = /^[48]-[0-9]{8}$/;
+    const cifRegex7 = /^\([48][0-9]{8}\)$/;
+    const cifRegex8 = /^\([48]-[0-9]{8}\)$/;
     let i = 0; // determina la linea
     // console.log(
     //   `EL TEXTO "(B81241796)" ES UN CIF ? => `,
     //   cifRegex.test('(B81241796)') ||
     //     cifRegex2.test('(B81241796)') ||
     //     cifRegex3.test('(B81241796)') ||
-    //     cifRegex4.test('(B81241796)') 
+    //     cifRegex4.test('(B81241796)')
     // );
+    console.log('ESTOY BUSCANDO EL CIF');
     textDeLaImagen.data.lines.forEach(linea => {
       let j = 0; // determina la palabra
       linea.words.forEach(palabraDeLaLinea => {
         // console.log('ESTOY BUSCANDO EL CIF EN => ', palabraDeLaLinea);
-        if (cifRegex.test(palabraDeLaLinea.text) || cifRegex2.test(palabraDeLaLinea.text)) {
-          indiceCif = {
-            linea: i,
-            palabra: j,
-            data: textDeLaImagen.data.lines[i].words[j].text
-          };
-          console.log('El CIF es => ', indiceCif.data);
-          console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
-          return indiceCif;
-        } else if (cifRegex3.test(palabraDeLaLinea.text) || cifRegex4.test(palabraDeLaLinea.text)) {
-          indiceCif = {
-            linea: i,
-            palabra: j,
-            data: textDeLaImagen.data.lines[i].words[j].text
-          };
-          console.log('El CIF es => ', indiceCif.data);
-          console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
-          return indiceCif;
+        if (indiceCif == null) {
+          if (cifRegex.test(palabraDeLaLinea.text) || cifRegex2.test(palabraDeLaLinea.text)) {
+            indiceCif = {
+              linea: i,
+              palabra: j,
+              data: textDeLaImagen.data.lines[i].words[j].text
+            };
+            console.log('El CIF es => ', indiceCif.data);
+            console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
+            return indiceCif;
+          } else if (cifRegex3.test(palabraDeLaLinea.text) || cifRegex4.test(palabraDeLaLinea.text)) {
+            indiceCif = {
+              linea: i,
+              palabra: j,
+              data: textDeLaImagen.data.lines[i].words[j].text
+            };
+            console.log('El CIF es => ', indiceCif.data);
+            console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
+            return indiceCif;
+          }
         }
         j++;
       });
+      if (indiceCif == null) {
+        linea.words.forEach(palabraDeLaLinea => {
+          // console.log('ESTOY BUSCANDO EL CIF EN => ', palabraDeLaLinea);
+          if (indiceCif == null) {
+            if (cifRegex5.test(palabraDeLaLinea.text) || cifRegex6.test(palabraDeLaLinea.text)) {
+              indiceCif = {
+                linea: i,
+                palabra: j,
+                data: textDeLaImagen.data.lines[i].words[j].text
+              };
+              console.log('El CIF es => ', indiceCif.data);
+              console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
+              return indiceCif;
+            } else if (cifRegex7.test(palabraDeLaLinea.text) || cifRegex8.test(palabraDeLaLinea.text)) {
+              indiceCif = {
+                linea: i,
+                palabra: j,
+                data: textDeLaImagen.data.lines[i].words[j].text
+              };
+              console.log('El CIF es => ', indiceCif.data);
+              console.log('El CIF esta en la linea (' + indiceCif.linea + ') => ', textDeLaImagen.data.lines[indiceCif.linea].text);
+              return indiceCif;
+            }
+          }
+          j++;
+        });
+      }
       i++;
     });
     return indiceCif;
