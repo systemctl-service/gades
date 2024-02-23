@@ -104,6 +104,9 @@ _class.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵdef
       path: 'almacen/reivisar-cantidad-linea-orden-compra/:idOrden/:ubiId',
       component: _layout_confirmar_orden_compra_revisar_cantidad_linea_orden_compra_revisar_cantidad_linea_orden_compra_component__WEBPACK_IMPORTED_MODULE_16__.RevisarCantidadLineaOrdenCompraComponent
     }, {
+      path: 'almacen/finalizar-orden-compra/:idOrden',
+      loadComponent: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ./layout/confirmar-orden-compra/finalizar-orden-compra/finalizar-orden-compra.component */ 56996)).then(c => c.FinalizarOrdenCompraComponent)
+    }, {
       path: 'factura-reader',
       component: _layout_factura_reader_factura_reader_component__WEBPACK_IMPORTED_MODULE_13__.FacturaReaderComponent
     }, {
@@ -202,16 +205,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppModule: () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 26575);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 26575);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 66401);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ 23966);
 /* harmony import */ var _layout_app_layout_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/app.layout.module */ 84295);
 /* harmony import */ var _layout_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout/notfound/notfound.component */ 62841);
 /* harmony import */ var _services_auth_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/auth/auth-interceptor.service */ 2347);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ 54860);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ 54860);
 /* harmony import */ var _layout_shared_prime_ng_prime_ng_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./layout/shared/prime-ng/prime-ng.module */ 9692);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 61699);
+/* harmony import */ var _layout_confirmar_orden_compra_finalizar_orden_compra_finalizar_orden_compra_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout/confirmar-orden-compra/finalizar-orden-compra/finalizar-orden-compra.component */ 56996);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 61699);
 var _class;
+
 
 
 
@@ -226,25 +231,25 @@ _class = AppModule;
 _class.ɵfac = function AppModule_Factory(t) {
   return new (t || _class)();
 };
-_class.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({
+_class.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({
   type: _class,
   bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent]
 });
-_class.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({
+_class.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({
   providers: [{
-    provide: _angular_common__WEBPACK_IMPORTED_MODULE_7__.LocationStrategy,
-    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_7__.HashLocationStrategy
+    provide: _angular_common__WEBPACK_IMPORTED_MODULE_8__.LocationStrategy,
+    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_8__.HashLocationStrategy
   }, {
-    provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_8__.HTTP_INTERCEPTORS,
+    provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_9__.HTTP_INTERCEPTORS,
     useClass: _services_auth_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_4__.AuthInterceptorService,
     multi: true
   }],
-  imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _layout_app_layout_module__WEBPACK_IMPORTED_MODULE_2__.AppLayoutModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_8__.HttpClientModule, _layout_shared_prime_ng_prime_ng_module__WEBPACK_IMPORTED_MODULE_5__.PrimeNgModule]
+  imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _layout_app_layout_module__WEBPACK_IMPORTED_MODULE_2__.AppLayoutModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_9__.HttpClientModule, _layout_shared_prime_ng_prime_ng_module__WEBPACK_IMPORTED_MODULE_5__.PrimeNgModule, _layout_confirmar_orden_compra_finalizar_orden_compra_finalizar_orden_compra_component__WEBPACK_IMPORTED_MODULE_6__.FinalizarOrdenCompraComponent]
 });
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AppModule, {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](AppModule, {
     declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent, _layout_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_3__.NotfoundComponent],
-    imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _layout_app_layout_module__WEBPACK_IMPORTED_MODULE_2__.AppLayoutModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_8__.HttpClientModule, _layout_shared_prime_ng_prime_ng_module__WEBPACK_IMPORTED_MODULE_5__.PrimeNgModule]
+    imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _layout_app_layout_module__WEBPACK_IMPORTED_MODULE_2__.AppLayoutModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_9__.HttpClientModule, _layout_shared_prime_ng_prime_ng_module__WEBPACK_IMPORTED_MODULE_5__.PrimeNgModule, _layout_confirmar_orden_compra_finalizar_orden_compra_finalizar_orden_compra_component__WEBPACK_IMPORTED_MODULE_6__.FinalizarOrdenCompraComponent]
   });
 })();
 
@@ -1148,7 +1153,7 @@ class CrearProductoPropioComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     });
   }
@@ -1156,7 +1161,7 @@ class CrearProductoPropioComponent {
   cargarTiposProductos() {
     this.enumService.getEnum('tipo_producto').subscribe({
       next: res => this.tiposProductos = res,
-      error: error => this.messageService.error(error.error.detail)
+      error: error => error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local')
     });
   }
   reqNewProducto(productoToSend) {
@@ -1173,7 +1178,7 @@ class CrearProductoPropioComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         return;
       }
     });
@@ -1874,14 +1879,14 @@ class CrearProductoComponent {
       });
     }, error => {
       console.error(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   // cargo los tipos de productos del select homonimo
   cargarTiposProductos() {
     this.subs.push(this.enumService.getEnum('tipo_producto').subscribe({
       next: res => this.tiposProductos = res,
-      error: error => this.messageService.error(error.error.detail)
+      error: error => error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local')
     }));
   }
   reqCreateProducto(productoToSend) {
@@ -1897,7 +1902,7 @@ class CrearProductoComponent {
     }, error => {
       console.error(error);
       this.loading = false;
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -2500,7 +2505,7 @@ class IngresarStockComponent {
       error: error => {
         console.error(error);
         this.loading = false;
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         return;
       }
     });
@@ -2759,14 +2764,18 @@ class AppLayoutComponent {
   }
   ngOnInit() {
     this.usuario = JSON.parse(localStorage.getItem('usuario'));
+    let jornadaIniciadadStatus = sessionStorage.getItem('jornadaIniciadadStatus');
+    console.log('jornadaIniciadadStatus => ', jornadaIniciadadStatus);
+    if (jornadaIniciadadStatus == '1') this.jornadaIniciada = true;
     this.subs.push(this.usuarioService.comprobarTimeUsuario(this.usuario.id).subscribe({
       next: response => {
         console.log(response);
         this.jornadaIniciada = response.jornadaIniciada;
+        sessionStorage.setItem('jornadaIniciadadStatus', this.jornadaIniciada ? "1" : "0");
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
     console.log();
@@ -2817,6 +2826,7 @@ class AppLayoutComponent {
   }
   // --------------------------------------------------------------
   iniciarJornada() {
+    this.jornadaIniciada = true;
     this.subs.push(this.usuarioService.iniciarTimeUsuario(this.usuario.id).subscribe({
       next: response => {
         console.log(response);
@@ -2829,7 +2839,8 @@ class AppLayoutComponent {
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        this.jornadaIniciada = false;
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -4003,6 +4014,345 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefi
 
 /***/ }),
 
+/***/ 56996:
+/*!**********************************************************************************************************!*\
+  !*** ./src/app/layout/confirmar-orden-compra/finalizar-orden-compra/finalizar-orden-compra.component.ts ***!
+  \**********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   FinalizarOrdenCompraComponent: () => (/* binding */ FinalizarOrdenCompraComponent)
+/* harmony export */ });
+/* harmony import */ var _home_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ 26575);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 61699);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ 28849);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 27947);
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! primeng/api */ 98026);
+/* harmony import */ var src_app_services_custom_message_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/custom-message.service */ 58062);
+/* harmony import */ var src_app_services_ordenes_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/ordenes.service */ 48862);
+/* harmony import */ var _shared_prime_ng_prime_ng_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/prime-ng/prime-ng.module */ 9692);
+/* harmony import */ var src_app_services_ubicaciones_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/ubicaciones.service */ 29156);
+/* harmony import */ var primeng_table__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! primeng/table */ 56192);
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! primeng/button */ 32947);
+/* harmony import */ var primeng_ripple__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! primeng/ripple */ 51339);
+/* harmony import */ var primeng_toolbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! primeng/toolbar */ 39177);
+/* harmony import */ var primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! primeng/dropdown */ 94553);
+/* harmony import */ var primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! primeng/confirmdialog */ 44123);
+
+var _class;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function FinalizarOrdenCompraComponent_div_0_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](1, "i", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+  }
+}
+function FinalizarOrdenCompraComponent_ng_container_1_ng_template_5_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "button", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function FinalizarOrdenCompraComponent_ng_container_1_ng_template_5_Template_button_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r10);
+      const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r9.back());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+  }
+}
+const _c0 = function () {
+  return ["/almacen"];
+};
+function FinalizarOrdenCompraComponent_ng_container_1_ng_template_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](0, "button", 24);
+  }
+  if (rf & 2) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](1, _c0));
+  }
+}
+function FinalizarOrdenCompraComponent_ng_container_1_div_15_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](1, "i", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+  }
+}
+function FinalizarOrdenCompraComponent_ng_container_1_ng_template_18_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "tr")(1, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2, "Ubicacion ID");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](3, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](4, "Descripcion");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](5, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](6, "Acciones");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+  }
+}
+function FinalizarOrdenCompraComponent_ng_container_1_ng_template_19_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "tr")(1, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](3, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](5, "td")(6, "button", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function FinalizarOrdenCompraComponent_ng_container_1_ng_template_19_Template_button_click_6_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r13);
+      const ubicacion_r11 = restoredCtx.$implicit;
+      const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r12.eliminarUbicacion(ubicacion_r11.ubicacionId));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
+  }
+  if (rf & 2) {
+    const ubicacion_r11 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", ubicacion_r11.ubicacionId, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", ubicacion_r11.detalles, " ");
+  }
+}
+function FinalizarOrdenCompraComponent_ng_container_1_ng_template_20_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "tr")(1, "td", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2, " Agregue las ubicaciones de entrada * ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+  }
+}
+function FinalizarOrdenCompraComponent_ng_container_1_small_21_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 29);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Reporte al menos una ubicacion");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+  }
+}
+function FinalizarOrdenCompraComponent_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r15 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "div", 5)(2, "div", 6)(3, "div", 7)(4, "p-toolbar", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](5, FinalizarOrdenCompraComponent_ng_container_1_ng_template_5_Template, 1, 0, "ng-template", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](6, FinalizarOrdenCompraComponent_ng_container_1_ng_template_6_Template, 1, 2, "ng-template", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](7, "h2");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](8, "Reportar ubicaciones de entrada");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](9, "hr");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](10, "div", 11)(11, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](12, "Ubicacion");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](13, "div", 12)(14, "p-dropdown", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function FinalizarOrdenCompraComponent_ng_container_1_Template_p_dropdown_ngModelChange_14_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r15);
+      const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r14.ubiSeleccinada = $event);
+    })("onChange", function FinalizarOrdenCompraComponent_ng_container_1_Template_p_dropdown_onChange_14_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r15);
+      const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r16.agregarUbicacion($event.value));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](15, FinalizarOrdenCompraComponent_ng_container_1_div_15_Template, 2, 0, "div", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](16, "div", 15)(17, "p-table", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](18, FinalizarOrdenCompraComponent_ng_container_1_ng_template_18_Template, 7, 0, "ng-template", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](19, FinalizarOrdenCompraComponent_ng_container_1_ng_template_19_Template, 7, 2, "ng-template", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](20, FinalizarOrdenCompraComponent_ng_container_1_ng_template_20_Template, 3, 0, "ng-template", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](21, FinalizarOrdenCompraComponent_ng_container_1_small_21_Template, 2, 0, "small", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](22, "div", 21)(23, "p-button", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function FinalizarOrdenCompraComponent_ng_container_1_Template_p_button_click_23_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r15);
+      const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r17.confirmarOrden());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r1.ubiSeleccinada)("options", ctx_r1.selectUbicaciones)("filter", true)("resetFilterOnHide", true);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", !ctx_r1.selectUbicaciones);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("value", ctx_r1.ubicacionesToSend);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r1.hadSubmit && ctx_r1.ubicacionesToSend.length == 0);
+  }
+}
+const _c1 = function () {
+  return {
+    width: "350px"
+  };
+};
+class FinalizarOrdenCompraComponent {
+  constructor() {
+    this.Form = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(_angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormBuilder);
+    this.ordenesService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(src_app_services_ordenes_service__WEBPACK_IMPORTED_MODULE_2__.OrdenesService);
+    this.ubicacionesService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(src_app_services_ubicaciones_service__WEBPACK_IMPORTED_MODULE_4__.UbicacionesService);
+    this.messageService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(src_app_services_custom_message_service__WEBPACK_IMPORTED_MODULE_1__.CustomMessageService);
+    this.router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router);
+    this.activatedRoute = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(_angular_router__WEBPACK_IMPORTED_MODULE_7__.ActivatedRoute);
+    this.confirmationService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(primeng_api__WEBPACK_IMPORTED_MODULE_8__.ConfirmationService);
+    this.subs = [];
+    this.ordenID = null;
+    this.personaID = null;
+    this.hadSubmit = false;
+    this.loadingView = false;
+    this.selectUbicaciones = [];
+    this.ubicacionesToSend = [];
+    this.ubiSeleccinada = null;
+  }
+  ngOnInit() {
+    var _this = this;
+    this.activatedRoute.params.subscribe({
+      next: function () {
+        var _ref = (0,_home_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (params) {
+          _this.ordenID = yield params['idOrden'];
+          _this.personaID = JSON.parse(localStorage.getItem('usuario')).id;
+          _this.cargarUbicaciones();
+        });
+        return function next(_x) {
+          return _ref.apply(this, arguments);
+        };
+      }()
+    });
+  }
+  back() {
+    var _this2 = this;
+    return (0,_home_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const lastUrl = yield sessionStorage.getItem('lastUrl');
+      _this2.router.navigateByUrl(lastUrl);
+    })();
+  }
+  cargarUbicaciones() {
+    this.subs.push(this.ubicacionesService.getUbicacionesDeEntrada().subscribe({
+      next: res => {
+        console.log('UBICACIONES => ', res);
+        this.selectUbicaciones = res;
+      },
+      error: error => {
+        console.error(error);
+        this.messageService.error(error.error.datail);
+      }
+    }));
+  }
+  agregarUbicacion(ubicacionSelected) {
+    this.ubicacionesToSend.push(ubicacionSelected);
+    setTimeout(() => {
+      this.ubiSeleccinada = null;
+      this.selectUbicaciones = this.selectUbicaciones.filter(ubicacion => {
+        return ubicacion != ubicacionSelected;
+      });
+    }, 100);
+  }
+  eliminarUbicacion(ubicacionId) {
+    this.ubicacionesToSend = this.ubicacionesToSend.filter(ubicacion => {
+      if (ubicacion.ubicacionId == ubicacionId) {
+        this.selectUbicaciones = [ubicacion].concat(this.selectUbicaciones);
+      }
+      return ubicacion.ubicacionId != ubicacionId;
+    });
+  }
+  confirmarOrden() {
+    this.hadSubmit = true;
+    if (!this.ubicacionesToSend || !this.ordenID || this.ubicacionesToSend.length == 0) {
+      this.messageService.error('Verifique los campos');
+      return;
+    }
+    let ubicacionesToSendFinal = [];
+    this.ubicacionesToSend.forEach(ubicacion => {
+      ubicacionesToSendFinal.push(ubicacion.ubicacionId);
+    });
+    const requestJson = {
+      id: this.ordenID,
+      rrhh: this.personaID,
+      ubicaciones: ubicacionesToSendFinal
+    };
+    this.confirmationService.confirm({
+      key: 'confirmarOrden',
+      accept: () => {
+        this.confirmationService.close();
+        this.ordenesService.confirmarOrdenRecibida(requestJson).subscribe({
+          next: res => {
+            this.messageService.win('Orden de compra confirmada');
+            this.router.navigateByUrl('/almacen/confirmar-orden-compra');
+          },
+          error: error => {
+            console.error(error);
+            error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+          }
+        });
+      },
+      reject: () => {
+        this.confirmationService.close();
+      }
+    });
+  }
+  ngOnDestroy() {
+    this.subs.forEach(sub => sub.unsubscribe());
+  }
+}
+_class = FinalizarOrdenCompraComponent;
+_class.ɵfac = function FinalizarOrdenCompraComponent_Factory(t) {
+  return new (t || _class)();
+};
+_class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({
+  type: _class,
+  selectors: [["app-finalizar-orden-compra"]],
+  standalone: true,
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵStandaloneFeature"]],
+  decls: 3,
+  vars: 5,
+  consts: [["class", "flex align-items-center justify-content-center", "style", "height: 80vh", 4, "ngIf"], [4, "ngIf"], ["header", "Confirmacion", "key", "confirmarOrden", "icon", "pi pi-exclamation-triangle", "message", "Esta accion no se puede deshacer, por favor asegurese de haber reportado todas las ubicaciones", "acceptLabel", "Continuar", "rejectLabel", "Cancelar", "acceptButtonStyleClass", "p-button-text p-button-primary", "rejectButtonStyleClass", "p-button-text p-button-secondary"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "80vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], [1, "grid"], [1, "col-12"], [1, "card", "p-fluid"], ["styleClass", "toolbar-sin-bordes mb-3"], ["pTemplate", "left"], ["pTemplate", "right"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-12"], [1, "flex", "flex-row"], ["placeholder", "Selecciona", "filterBy", "ubicacionId", "optionLabel", "ubicacionId", 1, "w-full", 3, "ngModel", "options", "filter", "resetFilterOnHide", "ngModelChange", "onChange"], ["class", "pt-2 ml-2", 4, "ngIf"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 1, "w-full", "max-w-full", 3, "value"], ["pTemplate", "header"], ["pTemplate", "body"], ["pTemplate", "emptymessage"], ["class", "p-error", 4, "ngIf"], [1, "flex", "flex-column", "md:flex-row"], ["label", "Finalizar recepcion", "icon", "pi pi-check-square", "styleClass", "p-button-primary", 1, "m-2", 3, "click"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-replay", 1, "p-button-rounded", 3, "click"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-times", 1, "p-button-rounded", "p-button-danger", 3, "routerLink"], [1, "pt-2", "ml-2"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "1.4rem"], ["pButton", "", "pRipple", "", "icon", "pi pi-trash", 1, "p-button-rounded", "p-button-danger", 3, "click"], ["colspan", "3", 1, "text-center"], [1, "p-error"]],
+  template: function FinalizarOrdenCompraComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](0, FinalizarOrdenCompraComponent_div_0_Template, 2, 0, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](1, FinalizarOrdenCompraComponent_ng_container_1_Template, 24, 7, "ng-container", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](2, "p-confirmDialog", 2);
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.loadingView);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", !ctx.loadingView);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵstyleMap"](_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](4, _c1));
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, _shared_prime_ng_prime_ng_module__WEBPACK_IMPORTED_MODULE_3__.PrimeNgModule, primeng_table__WEBPACK_IMPORTED_MODULE_10__.Table, primeng_api__WEBPACK_IMPORTED_MODULE_8__.PrimeTemplate, primeng_button__WEBPACK_IMPORTED_MODULE_11__.ButtonDirective, primeng_button__WEBPACK_IMPORTED_MODULE_11__.Button, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgModel, primeng_ripple__WEBPACK_IMPORTED_MODULE_12__.Ripple, primeng_toolbar__WEBPACK_IMPORTED_MODULE_13__.Toolbar, primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__.Dropdown, primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_15__.ConfirmDialog, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterLink],
+  styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+});
+
+/***/ }),
+
 /***/ 73944:
 /*!************************************************************************************************************************************!*\
   !*** ./src/app/layout/confirmar-orden-compra/revisar-cantidad-linea-orden-compra/revisar-cantidad-linea-orden-compra.component.ts ***!
@@ -4178,10 +4528,10 @@ function RevisarCantidadLineaOrdenCompraComponent_ng_container_1_Template(rf, ct
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](16, RevisarCantidadLineaOrdenCompraComponent_ng_container_1_ng_container_16_Template, 8, 6, "ng-container", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](17, RevisarCantidadLineaOrdenCompraComponent_ng_container_1_ng_container_17_Template, 3, 1, "ng-container", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "div", 15)(19, "p-button", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RevisarCantidadLineaOrdenCompraComponent_ng_container_1_Template_p_button_click_19_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("onClick", function RevisarCantidadLineaOrdenCompraComponent_ng_container_1_Template_p_button_onClick_19_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r15);
       const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r16.confirmarOrden());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r16.navegarFinalizarOrden());
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
@@ -4280,6 +4630,10 @@ class RevisarCantidadLineaOrdenCompraComponent {
     }
     return true;
   }
+  navegarFinalizarOrden() {
+    sessionStorage.setItem('lastUrl', `/almacen/reivisar-cantidad-linea-orden-compra/${this.ordenID}/${this.ubicacionId}`);
+    this.router.navigateByUrl('/almacen/finalizar-orden-compra/' + this.ordenID);
+  }
   cargarLineaOrdenCompra(barcode) {
     this.lineaOrdenCompraSeleccionada = null;
     this.lineasOrdenCompra.forEach(linea => {
@@ -4336,30 +4690,9 @@ class RevisarCantidadLineaOrdenCompraComponent {
       error: error => {
         console.error(error);
         this.loadingView = false; // dejar de cargar
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
-  }
-  confirmarOrden() {
-    this.confirmationService.confirm({
-      key: 'confirmarOrden',
-      accept: () => {
-        this.confirmationService.close();
-        this.ordenesService.confirmarOrdenRecibida(this.ordenID).subscribe({
-          next: res => {
-            this.messageService.win('Orden de compra confirmada');
-            this.router.navigateByUrl('/almacen/confirmar-orden-compra');
-          },
-          error: error => {
-            console.error(error);
-            this.messageService.error(error.error.detail);
-          }
-        });
-      },
-      reject: () => {
-        this.confirmationService.close();
-      }
-    });
   }
   recibirCamionDeOrdenCompraRQ(requestJson) {
     this.subs.push(this.ordenesService.ordenCompraRecibirCamion(requestJson).subscribe({
@@ -4372,7 +4705,7 @@ class RevisarCantidadLineaOrdenCompraComponent {
       error: error => {
         console.error(error);
         this.loadingView = false; // dejar de cargar
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         this.router.navigateByUrl('/almacen/confirmar-orden-compra');
       }
     }));
@@ -4390,7 +4723,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefi
   selectors: [["app-revisar-cantidad-linea-orden-compra"]],
   decls: 3,
   vars: 5,
-  consts: [["class", "flex align-items-center justify-content-center", "style", "height: 80vh", 4, "ngIf"], [4, "ngIf"], ["header", "Confirmacion", "key", "confirmarOrden", "icon", "pi pi-exclamation-triangle", "message", "Esta accion no se puede deshacer, por favor asegurese de haber revisado todo los productos", "acceptLabel", "Continuar", "rejectLabel", "Cancelar", "acceptButtonStyleClass", "p-button-text p-button-primary", "rejectButtonStyleClass", "p-button-text p-button-secondary"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "80vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], [1, "grid"], [1, "col-12"], [1, "card", "p-fluid"], ["styleClass", "toolbar-sin-bordes mb-3"], ["pTemplate", "left"], ["pTemplate", "right"], [1, "", 3, "formGroup"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-12"], ["autocomplete", "nope", "id", "codigoEan", "type", "number", "pInputText", "", "placeholder", "Ingrese el codigoEan", "formControlName", "codigoEan", 3, "ngClass", "input"], ["class", "p-error", 4, "ngIf"], [1, "flex", "flex-column", "md:flex-row"], ["label", "Terminar recepcion", "icon", "pi pi-check-square", "styleClass", "p-button-primary", 1, "m-2", 3, "click"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-replay", 1, "p-button-rounded", 3, "click"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-times", 1, "p-button-rounded", "p-button-danger", 3, "routerLink"], [1, "p-error"], ["autocomplete", "nope", "id", "cantidad", "type", "number", "pInputText", "", "placeholder", "Ingrese la Cantidad", "formControlName", "cantidad", 3, "ngClass"], ["label", "Confirmar cantidad recibida", "icon", "pi pi-shopping-cart", "styleClass", "p-button-primary p-button-warning", 1, "m-2", 3, "disabled", "click"]],
+  consts: [["class", "flex align-items-center justify-content-center", "style", "height: 80vh", 4, "ngIf"], [4, "ngIf"], ["header", "Confirmacion", "key", "confirmarOrden", "icon", "pi pi-exclamation-triangle", "message", "Esta accion no se puede deshacer, por favor asegurese de haber revisado todo los productos", "acceptLabel", "Continuar", "rejectLabel", "Cancelar", "acceptButtonStyleClass", "p-button-text p-button-primary", "rejectButtonStyleClass", "p-button-text p-button-secondary"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "80vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], [1, "grid"], [1, "col-12"], [1, "card", "p-fluid"], ["styleClass", "toolbar-sin-bordes mb-3"], ["pTemplate", "left"], ["pTemplate", "right"], [1, "", 3, "formGroup"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-12"], ["autocomplete", "nope", "id", "codigoEan", "type", "number", "pInputText", "", "placeholder", "Ingrese el codigoEan", "formControlName", "codigoEan", 3, "ngClass", "input"], ["class", "p-error", 4, "ngIf"], [1, "flex", "flex-column", "md:flex-row"], ["label", "Terminar recepcion", "icon", "pi pi-check-square", "styleClass", "p-button-primary", 1, "m-2", 3, "onClick"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-replay", 1, "p-button-rounded", 3, "click"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-times", 1, "p-button-rounded", "p-button-danger", 3, "routerLink"], [1, "p-error"], ["autocomplete", "nope", "id", "cantidad", "type", "number", "pInputText", "", "placeholder", "Ingrese la Cantidad", "formControlName", "cantidad", 3, "ngClass"], ["label", "Confirmar cantidad recibida", "icon", "pi pi-shopping-cart", "styleClass", "p-button-primary p-button-warning", 1, "m-2", 3, "disabled", "click"]],
   template: function RevisarCantidadLineaOrdenCompraComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, RevisarCantidadLineaOrdenCompraComponent_div_0_Template, 2, 0, "div", 0);
@@ -4700,7 +5033,7 @@ class FacturaReaderComponent {
     //     },
     //     error: (error) => {
     //       console.log(error);
-    //       this.messageService.error(error.error.detail);
+    //       error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     //     },
     //   }),
     // );
@@ -5387,7 +5720,7 @@ class GastosComponent {
       this.imagenSubida = response.imagen;
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   // cargo los presupeustos del select homonimo
@@ -5398,7 +5731,7 @@ class GastosComponent {
       console.log(this.presupuestos);
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   cargarImagenPresupuesto(gastoToSend) {
@@ -5415,7 +5748,7 @@ class GastosComponent {
     }, error => {
       console.log(error);
       this.loading = false;
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -5614,7 +5947,7 @@ class MostrarTareaDocumentacionComponent {
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -5645,7 +5978,7 @@ class MostrarTareaDocumentacionComponent {
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -5661,7 +5994,7 @@ class MostrarTareaDocumentacionComponent {
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -5759,7 +6092,7 @@ class MostrarTareaFinalizacionComponent {
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6192,7 +6525,7 @@ class MostrarTareaMovimientoComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6219,7 +6552,7 @@ class MostrarTareaMovimientoComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6572,7 +6905,7 @@ class MostrarTareaPreRecComponent {
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6588,7 +6921,7 @@ class MostrarTareaPreRecComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6654,7 +6987,7 @@ class MostrarTareaPreRecComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6834,7 +7167,7 @@ class MostrarTareaTiempoComponent {
         this.estadoTareaIniciada = response.tareaIniciada;
       },
       error: error => {
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6851,7 +7184,7 @@ class MostrarTareaTiempoComponent {
           this.ngOnInit();
         },
         error: error => {
-          this.messageService.error(error.error.detail);
+          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       });
     }
@@ -6869,7 +7202,7 @@ class MostrarTareaTiempoComponent {
           this.ngOnInit();
         },
         error: error => {
-          this.messageService.error(error.error.detail);
+          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       });
     }
@@ -6887,7 +7220,7 @@ class MostrarTareaTiempoComponent {
           this.ngOnInit();
         },
         error: error => {
-          this.messageService.error(error.error.detail);
+          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       });
     }
@@ -7211,12 +7544,12 @@ class MostrarTareaComponent {
         },
         error: error => {
           console.log(error);
-          this.messageService.error(error.error.detail);
+          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       });
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   back() {
@@ -7240,7 +7573,7 @@ class MostrarTareaComponent {
       this.ngOnInit();
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     });
   }
   ngOnDestroy() {
@@ -7734,7 +8067,7 @@ class MostrarOrdenTrabajoComponent {
       console.log(this.lineasToShow);
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   toggleVerUbicaciones() {
@@ -7900,7 +8233,7 @@ class OrdenesTrabajoComponent {
       console.log(this.ordenesTrabajoToShow);
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   ngOnDestroy() {
@@ -8215,7 +8548,7 @@ class PdvComponent {
       this.loading = false;
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -8227,7 +8560,7 @@ class PdvComponent {
       console.log(this.productos);
     }, error => {
       console.log(error);
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -8245,7 +8578,7 @@ class PdvComponent {
     }, error => {
       console.log(error);
       this.loading = false;
-      this.messageService.error(error.error.detail);
+      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -9338,7 +9671,7 @@ class AppTopBarComponent {
       },
       error: error => {
         console.log(error);
-        this.messageService.error(error.error.detail);
+        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         this.router.navigateByUrl('/auth/login');
       }
     }));
@@ -9350,6 +9683,8 @@ class AppTopBarComponent {
   }
   toogleTarea() {
     if (this.jornadaIniciada) {
+      this.jornadaIniciada = false;
+      this.emitir();
       this.subs.push(this.usuarioService.pausarTimeUsuario(this.usuario.id).subscribe({
         next: response => {
           console.log(response);
@@ -9363,10 +9698,14 @@ class AppTopBarComponent {
         },
         error: error => {
           console.log(error);
-          this.messageService.error(error.error.detail);
+          this.jornadaIniciada = true;
+          this.emitir();
+          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       }));
     } else {
+      this.jornadaIniciada = true;
+      this.emitir();
       this.subs.push(this.usuarioService.iniciarTimeUsuario(this.usuario.id).subscribe({
         next: response => {
           console.log(response);
@@ -9380,7 +9719,9 @@ class AppTopBarComponent {
         },
         error: error => {
           console.log(error);
-          this.messageService.error(error.error.detail);
+          this.jornadaIniciada = false;
+          this.emitir();
+          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       }));
     }
@@ -10126,11 +10467,9 @@ class OrdenesService {
     const url = this.API_URL + `/ordenes_compras/mover_entrada`;
     return this.http.post(url, requestJson);
   }
-  confirmarOrdenRecibida(idOrden) {
+  confirmarOrdenRecibida(requestJson) {
     const url = this.API_URL + `/orden_compra/finalizar`;
-    return this.http.post(url, {
-      id: idOrden
-    });
+    return this.http.post(url, requestJson);
   }
 }
 _class = OrdenesService;
