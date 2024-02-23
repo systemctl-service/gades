@@ -4448,6 +4448,8 @@ var _class;
 
 
 
+const _c0 = ["outputImage"];
+const _c1 = ["inputImage"];
 function FacturaReaderComponent_ng_template_6_p_fileUpload_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
@@ -4544,35 +4546,35 @@ function FacturaReaderComponent_ng_container_12_div_3_ng_template_14_Template(rf
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const registroFactura_r20 = ctx.$implicit;
+    const registroFactura_r22 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r20.cantidad, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r22.cantidad, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r20.descripcion, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", registroFactura_r22.descripcion, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("", registroFactura_r20.importe, " \u20AC");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("", registroFactura_r22.importe, " \u20AC");
   }
 }
-function FacturaReaderComponent_ng_container_12_div_3_ng_template_23_Template(rf, ctx) {
+function FacturaReaderComponent_ng_container_12_div_3_ng_template_27_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "th");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Texto");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
 }
-function FacturaReaderComponent_ng_container_12_div_3_ng_template_24_Template(rf, ctx) {
+function FacturaReaderComponent_ng_container_12_div_3_ng_template_28_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "td", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "td", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const linea_r21 = ctx.$implicit;
+    const linea_r23 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", linea_r21.text, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", linea_r23.text, " ");
   }
 }
-function FacturaReaderComponent_ng_container_12_div_3_ng_container_28_Template(rf, ctx) {
+function FacturaReaderComponent_ng_container_12_div_3_ng_container_32_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](1, "div", 23)(2, "h5")(3, "b");
@@ -4584,20 +4586,20 @@ function FacturaReaderComponent_ng_container_12_div_3_ng_container_28_Template(r
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerEnd"]();
   }
   if (rf & 2) {
-    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](3);
+    const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ctx_r19.imagenes[0] == null ? null : ctx_r19.imagenes[0].errorFunc);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](ctx_r21.imagenes[0] == null ? null : ctx_r21.imagenes[0].errorFunc);
   }
 }
 function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    const _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
+    const _r25 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 20)(1, "div", 21)(2, "button", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function FacturaReaderComponent_ng_container_12_div_3_Template_button_click_2_listener() {
-      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r23);
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r25);
       const imagen_r14 = restoredCtx.$implicit;
-      const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r22.borrarImagen(imagen_r14.id));
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r24.borrarImagen(imagen_r14.id));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "div", 23)(4, "h6")(5, "b");
@@ -4615,18 +4617,25 @@ function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](14, FacturaReaderComponent_ng_container_12_div_3_ng_template_14_Template, 7, 3, "ng-template", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](15, " \u00A0 \u00A0 \u00A0 ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](16, "img", 26);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](17, "br");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](18, "div", 23)(19, "h6")(20, "b");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](21, "TEXTO DETECTADO");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](16, "div", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](17, "canvas", 27, 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](19, "img", 29, 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("load", function FacturaReaderComponent_ng_container_12_div_3_Template_img_load_19_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r25);
+      const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r26.cargarDataDectectedImg());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](21, "br");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](22, "div", 23)(23, "h6")(24, "b");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](25, "TEXTO DETECTADO");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](22, "p-table", 27);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](23, FacturaReaderComponent_ng_container_12_div_3_ng_template_23_Template, 3, 0, "ng-template", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](24, FacturaReaderComponent_ng_container_12_div_3_ng_template_24_Template, 3, 1, "ng-template", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](26, "p-table", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](27, FacturaReaderComponent_ng_container_12_div_3_ng_template_27_Template, 3, 0, "ng-template", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](28, FacturaReaderComponent_ng_container_12_div_3_ng_template_28_Template, 3, 1, "ng-template", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](25, "br")(26, "br")(27, "br");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](28, FacturaReaderComponent_ng_container_12_div_3_ng_container_28_Template, 7, 1, "ng-container", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](29, "br")(30, "br")(31, "br");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](32, FacturaReaderComponent_ng_container_12_div_3_ng_container_32_Template, 7, 1, "ng-container", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
@@ -4638,9 +4647,9 @@ function FacturaReaderComponent_ng_container_12_div_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", ctx_r13.nFactura, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("value", imagen_r14.tabla);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("src", imagen_r14.imagen || "https://source.unsplash.com/random", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsanitizeUrl"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("value", ctx_r13.textDeLaImagen.data.lines);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx_r13.imagenes[0] == null ? null : ctx_r13.imagenes[0].errorFunc);
@@ -4651,7 +4660,7 @@ function FacturaReaderComponent_ng_container_12_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, FacturaReaderComponent_ng_container_12_label_1_Template, 3, 0, "label", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "div", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, FacturaReaderComponent_ng_container_12_div_3_Template, 29, 6, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, FacturaReaderComponent_ng_container_12_div_3_Template, 33, 6, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerEnd"]();
   }
@@ -4715,7 +4724,7 @@ class FacturaReaderComponent {
       let errorH = false;
       let errorFuncion = null;
       _this.loading = true;
-      const worker = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.createWorker)("spa", 2, {
+      const worker = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.createWorker)('spa', 2, {
         legacyCore: true,
         legacyLang: true
       });
@@ -4841,6 +4850,32 @@ class FacturaReaderComponent {
       _this.imagenes.push(imagenToSave);
       _this.imagenSubida = null;
     })();
+  }
+  cargarDataDectectedImg() {
+    setTimeout(() => {
+      const canvasElement = this.outputImage.nativeElement;
+      const imageElement = this.inputImage.nativeElement;
+      const {
+        naturalWidth,
+        naturalHeight
+      } = imageElement;
+      this.cx = canvasElement.getContext('2d');
+      this.cx.lineWidth = 5;
+      this.cx.lineCap = 'square';
+      this.cx.strokeStyle = 'green';
+      canvasElement.width = naturalWidth;
+      canvasElement.height = naturalHeight;
+      this.textDeLaImagen.data.words.forEach(w => {
+        const bounding = w.bbox; // [1,1,2,2]
+        console.log(bounding);
+        this.cx.strokeStyle = 'red';
+        this.cx.strokeRect(bounding.x0, bounding.y0, bounding.x1 - bounding.x0, bounding.y1 - bounding.y0);
+        this.cx.beginPath();
+        // this.cx.moveTo(w.baseline.x0, w.baseline.y0);
+        // this.cx.lineTo(w.baseline.x1, w.baseline.y1);
+        this.cx.stroke();
+      });
+    }, 1000);
   }
   borrarImagen(id) {
     this.imagenes = this.imagenes.filter(imagen => imagen.id !== id);
@@ -5144,9 +5179,20 @@ _class.ɵfac = function FacturaReaderComponent_Factory(t) {
 _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
   type: _class,
   selectors: [["app-factura-reader"]],
+  viewQuery: function FacturaReaderComponent_Query(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵviewQuery"](_c0, 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵviewQuery"](_c1, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.outputImage = _t.first);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.inputImage = _t.first);
+    }
+  },
   decls: 13,
   vars: 4,
-  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], [4, "ngIf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "20vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], ["class", "w-full", 4, "ngIf"], ["id", "algo", 1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 1, "max-w-full", 3, "value"], ["pTemplate", "body"], ["alt", "", 2, "height", "auto", "/* width", "18vw", "max-width", "18vw", "max-height", "18vw", "height", "18vw", "*/\n                width", "50%", "max-width", "50%", "border-radius", "10%", 3, "src"], ["selectionMode", "single", 3, "value"], [2, "padding", "0", "border-color", "black"]],
+  consts: [[1, "card"], [1, "field", "pl-0", "pt-1", "pb-0", "md:col-4"], [1, "mb-3"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-center"], ["alt", "", 1, "p-3", "shadow-lg", "rounded-lg", 2, "height", "auto", "max-width", "10rem", 3, "src"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click", 4, "ngIf"], [4, "ngIf"], [1, "flex", "align-items-center", "text-primary"], ["class", "img-custom-width", "mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 3, "showUploadButton", "onSelect", 4, "ngIf"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click", 4, "ngIf"], ["mode", "basic", "chooseLabel", "Seleccione", "accept", "image/*", 1, "img-custom-width", 3, "showUploadButton", "onSelect"], ["label", "Eliminar", "icon", "pi pi-trash ", "styleClass", "p-button-danger", 3, "click"], ["label", "Subir", "icon", "pi pi-arrow-up ", "styleClass", "p-button-primary", 3, "click"], [1, "flex", "align-items-center", "justify-content-center", 2, "height", "20vh"], [1, "pi", "pi-spin", "pi-spinner", 2, "font-size", "2rem"], ["class", "w-full", 4, "ngIf"], ["id", "algo", 1, "grid", "mt-1"], ["class", "col-12", 4, "ngFor", "ngForOf"], [1, "w-full"], [1, "col-12"], [1, "card", "mb-0", 2, "position", "relative"], ["pButton", "", "type", "button", "icon", "pi pi-trash", 1, "p-button-danger", 2, "position", "absolute", "top", "0", "right", "0", 3, "click"], [1, "flex", "flex-column", "justify-content-center", "align-items-center"], ["selectionMode", "single", 1, "max-w-full", 3, "value"], ["pTemplate", "body"], [1, "justify-content-center", "align-items-center"], [1, "canvas-overlay"], ["outputImage", ""], ["alt", "", 1, "input-image", 3, "src", "load"], ["inputImage", ""], ["selectionMode", "single", 3, "value"], [2, "padding", "0", "border-color", "black"]],
   template: function FacturaReaderComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "label", 2)(3, "b");
@@ -5176,7 +5222,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
     }
   },
   dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgIf, primeng_api__WEBPACK_IMPORTED_MODULE_7__.PrimeTemplate, primeng_button__WEBPACK_IMPORTED_MODULE_8__.ButtonDirective, primeng_button__WEBPACK_IMPORTED_MODULE_8__.Button, primeng_fieldset__WEBPACK_IMPORTED_MODULE_9__.Fieldset, primeng_fileupload__WEBPACK_IMPORTED_MODULE_10__.FileUpload, primeng_table__WEBPACK_IMPORTED_MODULE_11__.Table],
-  styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+  styles: ["@media screen and (min-width: 768px) {\n  .canvas-overlay[_ngcontent-%COMP%] {\n    position: absolute;\n    height: 60rem;\n    width: 50rem;\n    object-fit: contain;\n    background-color: rgba(229, 237, 255, 0.3803921569);\n    box-shadow: 0 0 10px #efefef;\n  }\n  .input-image[_ngcontent-%COMP%] {\n    height: 60rem;\n    width: 50rem;\n    object-fit: contain;\n  }\n}\n@media screen and (min-width: 481px) and (max-width: 767px) {\n  .canvas-overlay[_ngcontent-%COMP%] {\n    position: absolute;\n    height: 50rem;\n    width: 40rem;\n    object-fit: contain;\n    background-color: rgba(229, 237, 255, 0.3803921569);\n    box-shadow: 0 0 10px #efefef;\n  }\n  .input-image[_ngcontent-%COMP%] {\n    height: 50rem;\n    width: 40rem;\n    object-fit: contain;\n  }\n}\n@media screen and (max-width: 480px) {\n  .canvas-overlay[_ngcontent-%COMP%] {\n    position: absolute;\n    height: 50rem;\n    width: 25rem;\n    object-fit: contain;\n    background-color: rgba(229, 237, 255, 0.3803921569);\n    box-shadow: 0 0 10px #efefef;\n  }\n  .input-image[_ngcontent-%COMP%] {\n    height: 50rem;\n    width: 25rem;\n    object-fit: contain;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbGF5b3V0L2ZhY3R1cmEtcmVhZGVyL2ZhY3R1cmEtcmVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7SUFDRSxrQkFBQTtJQUNBLGFBQUE7SUFDQSxZQUFBO0lBQ0EsbUJBQUE7SUFDQSxtREFBQTtJQUNBLDRCQUFBO0VBQ0Y7RUFFQTtJQUNFLGFBQUE7SUFDQSxZQUFBO0lBQ0EsbUJBQUE7RUFBRjtBQUNGO0FBR0E7RUFDRTtJQUNFLGtCQUFBO0lBQ0EsYUFBQTtJQUNBLFlBQUE7SUFDQSxtQkFBQTtJQUNBLG1EQUFBO0lBQ0EsNEJBQUE7RUFERjtFQUlBO0lBQ0UsYUFBQTtJQUNBLFlBQUE7SUFDQSxtQkFBQTtFQUZGO0FBQ0Y7QUFLQTtFQUNFO0lBQ0Usa0JBQUE7SUFDQSxhQUFBO0lBQ0EsWUFBQTtJQUNBLG1CQUFBO0lBQ0EsbURBQUE7SUFDQSw0QkFBQTtFQUhGO0VBTUE7SUFDRSxhQUFBO0lBQ0EsWUFBQTtJQUNBLG1CQUFBO0VBSkY7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gIC5jYW52YXMtb3ZlcmxheSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGhlaWdodDogNjByZW07XG4gICAgd2lkdGg6IDUwcmVtO1xuICAgIG9iamVjdC1maXQ6IGNvbnRhaW47XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2U1ZWRmZjYxO1xuICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4ICNlZmVmZWY7XG4gIH1cbiAgXG4gIC5pbnB1dC1pbWFnZSB7XG4gICAgaGVpZ2h0OiA2MHJlbTtcbiAgICB3aWR0aDogNTByZW07XG4gICAgb2JqZWN0LWZpdDogY29udGFpbjtcbiAgfVxuXG59IFxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNDgxcHgpIGFuZCAobWF4LXdpZHRoOiA3NjdweCkge1xuICAuY2FudmFzLW92ZXJsYXkge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBoZWlnaHQ6IDUwcmVtO1xuICAgIHdpZHRoOiA0MHJlbTtcbiAgICBvYmplY3QtZml0OiBjb250YWluO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNlNWVkZmY2MTtcbiAgICBib3gtc2hhZG93OiAwIDAgMTBweCAjZWZlZmVmO1xuICB9XG4gIFxuICAuaW5wdXQtaW1hZ2Uge1xuICAgIGhlaWdodDogNTByZW07XG4gICAgd2lkdGg6IDQwcmVtO1xuICAgIG9iamVjdC1maXQ6IGNvbnRhaW47XG4gIH1cblxufSBcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDQ4MHB4KSB7XG4gIC5jYW52YXMtb3ZlcmxheSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGhlaWdodDogNTByZW07XG4gICAgd2lkdGg6IDI1cmVtO1xuICAgIG9iamVjdC1maXQ6IGNvbnRhaW47XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2U1ZWRmZjYxO1xuICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4ICNlZmVmZWY7XG4gIH1cbiAgXG4gIC5pbnB1dC1pbWFnZSB7XG4gICAgaGVpZ2h0OiA1MHJlbTtcbiAgICB3aWR0aDogMjVyZW07XG4gICAgb2JqZWN0LWZpdDogY29udGFpbjtcbiAgfVxuXG59ICJdLCJzb3VyY2VSb290IjoiIn0= */"]
 });
 
 /***/ }),
