@@ -4715,11 +4715,15 @@ class FacturaReaderComponent {
       let errorH = false;
       let errorFuncion = null;
       _this.loading = true;
-      _this.textDeLaImagen = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.recognize)(_this.imagenSubida, 'spa', {
-        errorHandler: () => {
-          // errorH = true;
-        }
+      const worker = yield (0,tesseract_js__WEBPACK_IMPORTED_MODULE_3__.createWorker)("spa", 2, {
+        legacyCore: true,
+        legacyLang: true
       });
+      // this.textDeLaImagen = await recognize(this.imagenSubida, 'spa', {
+      //   legacyCore: true,
+      //   legacyLang: true
+      // });
+      _this.textDeLaImagen = yield worker.recognize(_this.imagenSubida);
       _this.loading = false;
       if (!errorH) {
         // ver las lineas en la consola
