@@ -157,11 +157,11 @@ class LoginComponent {
     }, error => {
       this.loading = false;
       if (error.status == 401) {
-        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == "JWT Token not found" ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
         return;
       }
       if (error.status == 403) {
-        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == "JWT Token not found" ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
         return;
       }
     });

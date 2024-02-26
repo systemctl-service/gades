@@ -131,7 +131,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](19, "i", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, " DPV ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, " PDV ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "div", 1)(23, "div", 2)(24, "div", 3)(25, "div", 11);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](26, "i", 12);
