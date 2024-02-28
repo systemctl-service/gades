@@ -6195,7 +6195,7 @@ class MostrarTareaFinalizacionComponent {
     }));
   }
   back() {
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/ordenes-trabajo');
   }
   finalizar(id) {
     console.log('FINALIZAR?');
