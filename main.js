@@ -1138,7 +1138,7 @@ class CrearProductoPropioComponent {
       },
       error: error => {
         console.error(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     });
   }
@@ -1146,7 +1146,7 @@ class CrearProductoPropioComponent {
   cargarTiposProductos() {
     this.enumService.getEnum('tipo_producto').subscribe({
       next: res => this.tiposProductos = res,
-      error: error => error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local')
+      error: error => error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local')
     });
   }
   reqNewProducto(productoToSend) {
@@ -1163,7 +1163,7 @@ class CrearProductoPropioComponent {
       },
       error: error => {
         console.error(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         return;
       }
     });
@@ -1864,14 +1864,14 @@ class CrearProductoComponent {
       });
     }, error => {
       console.error(error);
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   // cargo los tipos de productos del select homonimo
   cargarTiposProductos() {
     this.subs.push(this.enumService.getEnum('tipo_producto').subscribe({
       next: res => this.tiposProductos = res,
-      error: error => error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local')
+      error: error => error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local')
     }));
   }
   reqCreateProducto(productoToSend) {
@@ -1887,7 +1887,7 @@ class CrearProductoComponent {
     }, error => {
       console.error(error);
       this.loading = false;
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -2490,7 +2490,7 @@ class IngresarStockComponent {
       error: error => {
         console.error(error);
         this.loading = false;
-        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         return;
       }
     });
@@ -2760,7 +2760,7 @@ class AppLayoutComponent {
       },
       error: error => {
         console.log(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
     console.log();
@@ -2825,7 +2825,7 @@ class AppLayoutComponent {
       error: error => {
         console.log(error);
         this.jornadaIniciada = false;
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -3922,7 +3922,7 @@ class ConfirmarOrdenCompraComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.datail);
+        this.messageService.error(error.error.detail);
       }
     }));
   }
@@ -3934,7 +3934,7 @@ class ConfirmarOrdenCompraComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.datail);
+        this.messageService.error(error.error.detail);
       }
     }));
   }
@@ -3955,7 +3955,7 @@ class ConfirmarOrdenCompraComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.datail);
+        this.messageService.error(error.error.detail);
       }
     }));
   }
@@ -4246,7 +4246,7 @@ class FinalizarOrdenCompraComponent {
       },
       error: error => {
         console.error(error);
-        this.messageService.error(error.error.datail);
+        this.messageService.error(error.error.detail);
       }
     }));
   }
@@ -4293,7 +4293,7 @@ class FinalizarOrdenCompraComponent {
           },
           error: error => {
             console.error(error);
-            error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+            error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
           }
         });
       },
@@ -4675,7 +4675,7 @@ class RevisarCantidadLineaOrdenCompraComponent {
       error: error => {
         console.error(error);
         this.loadingView = false; // dejar de cargar
-        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -4690,7 +4690,7 @@ class RevisarCantidadLineaOrdenCompraComponent {
       error: error => {
         console.error(error);
         this.loadingView = false; // dejar de cargar
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
         this.router.navigateByUrl('/almacen/confirmar-orden-compra');
       }
     }));
@@ -5018,7 +5018,7 @@ class FacturaReaderComponent {
     //     },
     //     error: (error) => {
     //       console.log(error);
-    //       error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+    //       error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
     //     },
     //   }),
     // );
@@ -5775,7 +5775,7 @@ class GastosComponent {
       this.imagenSubida = response.imagen;
     }, error => {
       console.log(error);
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   // cargo los presupeustos del select homonimo
@@ -5789,7 +5789,7 @@ class GastosComponent {
     }, error => {
       console.log(error);
       this.loadingPresupuestos = false;
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   cargarImagenPresupuesto(gastoToSend) {
@@ -5808,7 +5808,7 @@ class GastosComponent {
     }, error => {
       console.log(error);
       this.loading = false;
-      error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -6021,7 +6021,7 @@ class MostrarTareaDocumentacionComponent {
       error: error => {
         this.loadingImgs = false;
         console.log(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6056,7 +6056,7 @@ class MostrarTareaDocumentacionComponent {
       error: error => {
         this.loadingSubmit = false;
         console.log(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6078,7 +6078,7 @@ class MostrarTareaDocumentacionComponent {
         this.loadingDelete = false;
         this.idOnDelete = null;
         console.log(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6176,6 +6176,7 @@ class MostrarTareaFinalizacionComponent {
   constructor() {
     this.tareaService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(src_app_services_tarea_service__WEBPACK_IMPORTED_MODULE_1__.TareaService);
     this.activatedRoute = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_router__WEBPACK_IMPORTED_MODULE_3__.ActivatedRoute);
+    this.router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router);
     this.messageService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(src_app_services_custom_message_service__WEBPACK_IMPORTED_MODULE_0__.CustomMessageService);
     this.subcripciones = [];
     this.idTarea = -1;
@@ -6193,28 +6194,25 @@ class MostrarTareaFinalizacionComponent {
       }
     }));
   }
+  back() {
+    this.router.navigateByUrl('/');
+  }
   finalizar(id) {
     console.log('FINALIZAR?');
-    // this.subcripciones.push(
-    //   this.tareaService.finalizarTareaPadre(id).subscribe({
-    //     next: (response) => {
-    //       this.messageService.add({
-    //         severity: 'success',
-    //         summary: 'Exito',
-    //         detail: 'la tarea a sido finalizada'
-    //       })
-    //     },
-    //     error: (error) => {
-    //       this.messageService.add({
-    //         severity: 'error',
-    //         summary: 'Error',
-    //         detail: 'Hubo un error, no se pudo finalizar la tarea'
-    //       })
-    //     }
-    //   })
-    // )
+    this.subcripciones.push(this.tareaService.finalizarTareaPadre(id).subscribe({
+      next: response => {
+        this.messageService.add({
+          severity: 'success',
+          summary: 'Exito',
+          detail: 'la tarea a sido finalizada'
+        });
+        this.back();
+      },
+      error: error => {
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      }
+    }));
   }
-
   ngOnDestroy() {
     this.subcripciones.forEach(subcripcion => {
       subcripcion.unsubscribe();
@@ -6661,7 +6659,7 @@ class MostrarTareaMovimientoComponent {
       error: error => {
         this.loading = false;
         console.error(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -6690,7 +6688,7 @@ class MostrarTareaMovimientoComponent {
       error: error => {
         console.error(error);
         this.loading = false;
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -7143,7 +7141,7 @@ class MostrarTareaPreRecComponent {
       error: error => {
         this.loading = false;
         console.error(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -7172,7 +7170,7 @@ class MostrarTareaPreRecComponent {
       error: error => {
         console.error(error);
         this.loading = false;
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -7271,7 +7269,7 @@ class MostrarTareaTiempoComponent {
         this.estadoTareaIniciada = response.tareaIniciada;
       },
       error: error => {
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }
     }));
   }
@@ -7288,7 +7286,7 @@ class MostrarTareaTiempoComponent {
           this.ngOnInit();
         },
         error: error => {
-          error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+          error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
         }
       });
     }
@@ -7306,7 +7304,7 @@ class MostrarTareaTiempoComponent {
           this.ngOnInit();
         },
         error: error => {
-          error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+          error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
         }
       });
     }
@@ -7324,7 +7322,7 @@ class MostrarTareaTiempoComponent {
           this.ngOnInit();
         },
         error: error => {
-          error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+          error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
         }
       });
     }
@@ -7679,14 +7677,14 @@ class MostrarTareaComponent {
           },
           error: error => {
             console.log(error);
-            error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+            error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
           }
         });
       }, error => {
         this.loading = false;
         this.loadingTareaMov = false;
         console.log(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       }));
     }));
   }
@@ -7711,7 +7709,7 @@ class MostrarTareaComponent {
       this.ngOnInit();
     }, error => {
       console.log(error);
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
     });
   }
   ngOnDestroy() {
@@ -8238,7 +8236,7 @@ class MostrarOrdenTrabajoComponent {
     }, error => {
       this.loading = false;
       console.log(error);
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   toggleVerUbicaciones() {
@@ -8439,7 +8437,7 @@ class OrdenesTrabajoComponent {
     }, error => {
       console.log(error);
       this.loading = false;
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
     }));
   }
   ngOnDestroy() {
@@ -8748,7 +8746,7 @@ class PdvComponent {
       this.loading = false;
     }, error => {
       console.log(error);
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -8760,7 +8758,7 @@ class PdvComponent {
       console.log(this.productos);
     }, error => {
       console.log(error);
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -8778,7 +8776,7 @@ class PdvComponent {
     }, error => {
       console.log(error);
       this.loading = false;
-      error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+      error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
       return;
     }));
   }
@@ -9871,7 +9869,7 @@ class AppTopBarComponent {
       },
       error: error => {
         console.log(error);
-        error.error?.datail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
+        error.error?.detail ? this.messageService.error(error.error.detail) : error.error.message == 'JWT Token not found' ? this.messageService.alert('Sesion Expirada') : this.messageService.error('Ocurrio un error desconocido en local');
         this.router.navigateByUrl('/auth/login');
       }
     }));
@@ -9900,7 +9898,7 @@ class AppTopBarComponent {
           console.log(error);
           this.jornadaIniciada = true;
           this.emitir();
-          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+          error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       }));
     } else {
@@ -9921,7 +9919,7 @@ class AppTopBarComponent {
           console.log(error);
           this.jornadaIniciada = false;
           this.emitir();
-          error.error?.datail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
+          error.error?.detail ? this.messageService.error(error.error.detail) : this.messageService.error('Ocurrio un error desconocido en local');
         }
       }));
     }
@@ -11472,7 +11470,7 @@ class TareaService {
     return this.http.delete(url);
   }
   finalizarTareaPadre(id) {
-    const url = this.API_URL + `/lineas_tareas/estado`;
+    const url = this.API_URL + `/lineas_tareas/finalizacion`;
     return this.http.post(url, {
       id: id
     });
