@@ -128,7 +128,8 @@ class LoginComponent {
     this.loading = false;
     this.myForm = this.fb.group({
       username: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required]],
-      password: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required]]
+      password: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required]],
+      aplicacion: ['Movil', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required]]
     });
   }
   ngOnInit() {
@@ -2447,4 +2448,4 @@ _class4 = PasswordModule;
 /***/ })
 
 }]);
-//# sourceMappingURL=src_app_auth_login_login_module_ts.0d61daa46bd6a4ab.js.map
+//# sourceMappingURL=src_app_auth_login_login_module_ts.b782b512dc803ef2.js.map
