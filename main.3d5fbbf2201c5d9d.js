@@ -6595,7 +6595,7 @@ class MostrarTareaMovimientoComponent {
   // }
   validarUbicaciones() {
     if (this.ubicacionAntigua !== null && this.ubicacionAntigua !== '') {
-      if (this.ubicacionAntigua === this.tarea.preparaciones[0]?.origen) {
+      if (this.ubicacionAntigua === this.tarea.preparaciones?.origen) {
         this.ubicacionInvalida = false;
         return true;
       } else {
@@ -6609,7 +6609,7 @@ class MostrarTareaMovimientoComponent {
   }
   validarUbicacionesDestino() {
     if (this.ubicacionNueva !== null && this.ubicacionNueva !== '') {
-      if (this.ubicacionNueva === this.tarea.preparaciones[0].destino) {
+      if (this.ubicacionNueva === this.tarea.preparaciones.destino) {
         this.ubicacionInvalidaDestino = false;
         return true;
       } else {
@@ -6814,23 +6814,30 @@ function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_5_Templ
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
   }
 }
-function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_10_Template(rf, ctx) {
+function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "la ubicacion no es existe ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+  }
+}
+function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_11_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "El Codigo no pertenece al producto asignado a esta tarea");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
   }
 }
-function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_15_Template(rf, ctx) {
+function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_16_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
-    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](3);
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"]("Deben Moverse exactamente ", ctx_r6.tarea.ref2, " Undiades");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"]("Deben Moverse exactamente ", ctx_r7.tarea.ref2, " Undiades");
   }
 }
 const _c0 = function (a0) {
@@ -6845,76 +6852,77 @@ const _c1 = function () {
 };
 function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
-    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "div", 4)(2, "label");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](3, "Ubicacion Actual");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "input", 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_ngModelChange_4_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
-      const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r7.ubicacionAntigua = $event);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
+      const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r8.ubicacionAntigua = $event);
     })("blur", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_blur_4_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
-      const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r9.validarUbicaciones());
-    })("keyup.enter", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_keyup_enter_4_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
       const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r10.focusBarcode());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r10.validarUbicaciones());
+    })("keyup.enter", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_keyup_enter_4_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
+      const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r11.focusBarcode());
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](5, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_5_Template, 2, 0, "small", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](6, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_6_Template, 2, 0, "small", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](6, "div", 4)(7, "label");
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](8, "Codigo de Barras de la Mercancia");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](7, "div", 4)(8, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](9, "Codigo de Barras de la Mercancia");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](9, "input", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_ngModelChange_9_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
-      const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r11.barcode = $event);
-    })("blur", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_blur_9_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](10, "input", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_ngModelChange_10_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
       const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r12.validarCodigo());
-    })("keyup.enter", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_keyup_enter_9_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r12.barcode = $event);
+    })("blur", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_blur_10_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
       const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r13.focusCantidad());
-    });
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](10, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_10_Template, 2, 0, "small", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](11, "div", 4)(12, "label");
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](13, "Cantidad");
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](14, "input", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_ngModelChange_14_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r13.validarCodigo());
+    })("keyup.enter", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_keyup_enter_10_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
       const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r14.cantidad = $event);
-    })("blur", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_blur_14_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r14.focusCantidad());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](11, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_11_Template, 2, 0, "small", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](12, "div", 4)(13, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](14, "Cantidad");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](15, "input", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_ngModelChange_15_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
       const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r15.validarCantidad());
-    });
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](15, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_15_Template, 2, 1, "small", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](16, "div", 9)(17, "p-button", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_p_button_click_17_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r15.cantidad = $event);
+    })("blur", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_input_blur_15_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
       const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r16.submit());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r16.validarCantidad());
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](18, "p-button", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("onClick", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_p_button_onClick_18_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](16, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_small_16_Template, 2, 1, "small", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](17, "div", 9)(18, "p-button", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_p_button_click_18_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
       const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r17.submit(true));
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r17.submit());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](19, "p-button", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("onClick", function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template_p_button_onClick_19_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
+      const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r18.submit(true));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerEnd"]();
@@ -6922,15 +6930,17 @@ function MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template(rf, 
   if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r2.ubicacionAntigua)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction1"](9, _c0, ctx_r2.ubicacionInvalida));
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r2.ubicacionAntigua)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction1"](10, _c0, ctx_r2.ubicacionInvalida));
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r2.ubicacionInvalida);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r2.ubicaciones.length === 0 && ctx_r2.ubicacionInvalida);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r2.ubicaciones.length > 0 && ctx_r2.ubicacionInvalida);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r2.barcode)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction1"](11, _c0, ctx_r2.codigoInvalido));
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r2.barcode)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction1"](12, _c0, ctx_r2.codigoInvalido));
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r2.codigoInvalido);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r2.cantidad)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](13, _c1));
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r2.cantidad)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](14, _c1));
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx_r2.cantidadInvalida);
   }
@@ -6944,32 +6954,32 @@ function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_small_5_Templ
 }
 function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
-    const _r20 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    const _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "div", 4)(2, "label");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](3, "Nueva Ubicacion");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "input", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template_input_ngModelChange_4_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r20);
-      const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r19.ubicacionNueva = $event);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r21);
+      const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r20.ubicacionNueva = $event);
     })("blur", function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template_input_blur_4_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r20);
-      const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r21.validarUbicacionesDestino());
-    })("keyup.enter", function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template_input_keyup_enter_4_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r20);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r21);
       const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r22.focusCantidad());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r22.validarUbicacionesDestino());
+    })("keyup.enter", function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template_input_keyup_enter_4_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r21);
+      const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r23.focusCantidad());
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](5, MostrarTareaPreRecComponent_ng_container_2_ng_container_2_small_5_Template, 2, 0, "small", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](6, "div", 9)(7, "p-button", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template_p_button_click_7_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r20);
-      const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r23.submitProceso());
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r21);
+      const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r24.submitProceso());
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerEnd"]();
@@ -6985,7 +6995,7 @@ function MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template(rf, 
 function MostrarTareaPreRecComponent_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](1, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template, 19, 14, "ng-container", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](1, MostrarTareaPreRecComponent_ng_container_2_ng_container_1_Template, 20, 15, "ng-container", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](2, MostrarTareaPreRecComponent_ng_container_2_ng_container_2_Template, 8, 5, "ng-container", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerEnd"]();
   }
@@ -7043,10 +7053,25 @@ class MostrarTareaPreRecComponent {
         };
       }()
     }));
+    if (this.tarea.preparaciones.tipo === 'Recurso') {
+      this.cargarUbicaciones();
+    }
   }
   back() {
     let lastUrl = sessionStorage.getItem('lastUrl');
     this.router.navigateByUrl(lastUrl);
+  }
+  cargarUbicaciones() {
+    this.subs.push(this.ubicacionesService.getUbicaciones().subscribe({
+      next: res => {
+        console.log('UBICACIONES =>', res);
+        this.ubicaciones = res;
+      },
+      error: error => {
+        console.error(error);
+        this.messageService.error(error.error.detail);
+      }
+    }));
   }
   cargarTareaSig() {
     this.tareaSig = null;
@@ -7100,14 +7125,28 @@ class MostrarTareaPreRecComponent {
   //   return false;
   // }
   validarUbicaciones() {
-    if (this.ubicacionAntigua !== null && this.ubicacionAntigua !== '') {
-      if (this.ubicacionAntigua === this.tarea.preparaciones[0]?.origen) {
+    // si la ubicacion ingresada es vacio o null es invalido
+    if (this.ubicacionAntigua === null || this.ubicacionAntigua === '') {
+      this.ubicacionInvalida = true;
+      return false;
+    }
+    // si estamos en un recurso y tenemos ubicaciones
+    // esta condicion se salta si no tenemos ubicaiones por lo que no estamos en un recurso
+    if (this.ubicaciones.length > 0) {
+      const existe = this.ubicaciones.find(ubi => ubi.ubicacionId === this.ubicacionAntigua);
+      // verificamos si la ubicacion ingresada existe y retornamos valido si es asi
+      if (existe) {
         this.ubicacionInvalida = false;
         return true;
       } else {
         this.ubicacionInvalida = true;
         return false;
       }
+    }
+    // si la ubicacion de origen ingresada es igual a la solicitada es valido
+    if (this.ubicacionAntigua === this.tarea.preparaciones?.origen) {
+      this.ubicacionInvalida = false;
+      return true;
     } else {
       this.ubicacionInvalida = true;
       return false;
@@ -7115,7 +7154,7 @@ class MostrarTareaPreRecComponent {
   }
   validarUbicacionesDestino() {
     if (this.ubicacionNueva !== null && this.ubicacionNueva !== '') {
-      if (this.ubicacionNueva === this.tarea.preparaciones[0].destino) {
+      if (this.ubicacionNueva === this.tarea.preparaciones.destino) {
         this.ubicacionInvalidaDestino = false;
         return true;
       } else {
@@ -7545,7 +7584,7 @@ function MostrarTareaComponent_ng_container_1_div_1_p_13_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate2"](" ", ctx_r7.tarea.preparaciones[0] == null ? null : ctx_r7.tarea.preparaciones[0].origen, " a ", ctx_r7.tarea.preparaciones[0] == null ? null : ctx_r7.tarea.preparaciones[0].destino, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate2"](" ", ctx_r7.tarea.preparaciones == null ? null : ctx_r7.tarea.preparaciones.origen, " a ", ctx_r7.tarea.preparaciones == null ? null : ctx_r7.tarea.preparaciones.destino, " ");
   }
 }
 function MostrarTareaComponent_ng_container_1_div_1_ng_container_15_Template(rf, ctx) {
@@ -10223,7 +10262,8 @@ class UsuarioService {
     const refresh_token = localStorage.getItem('refresh_token') || '';
     const url = this.API_URL + `/token/refresh`;
     const refresh = {
-      refresh_token: refresh_token
+      refresh_token: refresh_token,
+      aplicacion: 'Movil'
     };
     return this.http.post(url, refresh).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.tap)(resp => {
       this.guardarStorage(resp.token, resp.refresh_token, resp.data);
@@ -11822,4 +11862,4 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstr
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.4f30bacc0b696b26.js.map
+//# sourceMappingURL=main.3d5fbbf2201c5d9d.js.map
