@@ -2698,6 +2698,7 @@ class IngresarStockComponent {
   }
   buscarFechaCaducidad() {
     console.log('hey');
+    this.mostrarFechaCaducidad = false;
     if (this.codigoEan && this.numeroLote) {
       this.loadingFechaCaducidad = true;
       clearTimeout(this.timeout);
@@ -12638,4 +12639,4 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstr
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.d921a70b822c44f4.js.map
+//# sourceMappingURL=main.8aa8168a8c649f3b.js.map
