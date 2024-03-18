@@ -91,7 +91,7 @@ const _c3 = function () {
   return ["/gastos"];
 };
 const _c4 = function () {
-  return ["/pdv"];
+  return ["/tpv"];
 };
 const _c5 = function () {
   return ["/almacen"];
@@ -142,7 +142,7 @@ function DashboardComponent_ng_container_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](27, "i", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](28, "span", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](29, " PDV ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](29, " TPV ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](30, "div", 5)(31, "div", 11)(32, "div", 7)(33, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](34, "i", 19);
@@ -348,4 +348,4 @@ _class.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefi
 /***/ })
 
 }]);
-//# sourceMappingURL=src_app_layout_dashboard_dashboard_module_ts.e797d6a028fbe53e.js.map
+//# sourceMappingURL=src_app_layout_dashboard_dashboard_module_ts.e22cb118dfb9dcdf.js.map
