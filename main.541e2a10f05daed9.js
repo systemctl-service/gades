@@ -6253,7 +6253,7 @@ class DespacharComponent {
   }
   cargarUbicaciones() {
     this.loadingUbicaciones = true;
-    this.subs.push(this.ubicacionesService.getUbicacionesDeEntrada().subscribe({
+    this.subs.push(this.ubicacionesService.getUbicacionesDeSalida().subscribe({
       next: res => {
         console.log('UBICACIONES => ', res);
         this.ubicaciones = res;
@@ -14927,6 +14927,10 @@ class UbicacionesService {
     const url = this.API_URL + `/ubicaciones?tipo=entrada`;
     return this.http.get(url);
   }
+  getUbicacionesDeSalida() {
+    const url = this.API_URL + `/ubicaciones?tipo=salida`;
+    return this.http.get(url);
+  }
   getUbicacion(id) {
     const url = this.API_URL + `/ubicacion/${id}`;
     return this.http.get(url);
@@ -15077,4 +15081,4 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstr
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.a7c6ebc2564c56d1.js.map
+//# sourceMappingURL=main.541e2a10f05daed9.js.map
